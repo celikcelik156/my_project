@@ -1,0 +1,27 @@
+c:\users\user\documents\visual studio 2012\Projects\WindowsFormsApplication28\WindowsFormsApplication28\bin\Debug\WindowsFormsApplication28.exe.config
+c:\users\user\documents\visual studio 2012\Projects\WindowsFormsApplication28\WindowsFormsApplication28\bin\Debug\WindowsFormsApplication28.exe
+c:\users\user\documents\visual studio 2012\Projects\WindowsFormsApplication28\WindowsFormsApplication28\bin\Debug\WindowsFormsApplication28.pdb
+c:\users\user\documents\visual studio 2012\Projects\WindowsFormsApplication28\WindowsFormsApplication28\obj\Debug\WindowsFormsApplication28.csprojResolveAssemblyReference.cache
+c:\users\user\documents\visual studio 2012\Projects\WindowsFormsApplication28\WindowsFormsApplication28\obj\Debug\WindowsFormsApplication28.Form1.resources
+c:\users\user\documents\visual studio 2012\Projects\WindowsFormsApplication28\WindowsFormsApplication28\obj\Debug\WindowsFormsApplication28.Properties.Resources.resources
+c:\users\user\documents\visual studio 2012\Projects\WindowsFormsApplication28\WindowsFormsApplication28\obj\Debug\WindowsFormsApplication28.csproj.GenerateResource.Cache
+c:\users\user\documents\visual studio 2012\Projects\WindowsFormsApplication28\WindowsFormsApplication28\obj\Debug\WindowsFormsApplication28.exe
+c:\users\user\documents\visual studio 2012\Projects\WindowsFormsApplication28\WindowsFormsApplication28\obj\Debug\WindowsFormsApplication28.pdb
+C:\Users\user\Documents\Visual Studio 2012\Projects\2023\WindowsFormsApplication28\WindowsFormsApplication28\bin\Debug\WindowsFormsApplication28.exe.config
+C:\Users\user\Documents\Visual Studio 2012\Projects\2023\WindowsFormsApplication28\WindowsFormsApplication28\obj\Debug\WindowsFormsApplication28.exe
+C:\Users\user\Documents\Visual Studio 2012\Projects\2023\WindowsFormsApplication28\WindowsFormsApplication28\obj\Debug\WindowsFormsApplication28.pdb
+C:\Users\user\Documents\Visual Studio 2012\Projects\2023\WindowsFormsApplication28\WindowsFormsApplication28\bin\Debug\WindowsFormsApplication28.exe
+C:\Users\user\Documents\Visual Studio 2012\Projects\2023\WindowsFormsApplication28\WindowsFormsApplication28\bin\Debug\WindowsFormsApplication28.pdb
+C:\Users\user\Documents\Visual Studio 2012\Projects\2023\WindowsFormsApplication28\WindowsFormsApplication28\obj\Debug\WindowsFormsApplication28.csprojResolveAssemblyReference.cache
+C:\Users\user\Documents\Visual Studio 2012\Projects\2023\WindowsFormsApplication28\WindowsFormsApplication28\obj\Debug\WindowsFormsApplication28.Form1.resources
+C:\Users\user\Documents\Visual Studio 2012\Projects\2023\WindowsFormsApplication28\WindowsFormsApplication28\obj\Debug\WindowsFormsApplication28.Properties.Resources.resources
+C:\Users\user\Documents\Visual Studio 2012\Projects\2023\WindowsFormsApplication28\WindowsFormsApplication28\obj\Debug\WindowsFormsApplication28.csproj.GenerateResource.Cache
+D:\Akademik\Verilen Dersler\Görsel Prog I\Projects\2023\WindowsFormsApplication28\WindowsFormsApplication28\bin\Debug\WindowsFormsApplication28.exe.config
+D:\Akademik\Verilen Dersler\Görsel Prog I\Projects\2023\WindowsFormsApplication28\WindowsFormsApplication28\obj\Debug\WindowsFormsApplication28.exe
+D:\Akademik\Verilen Dersler\Görsel Prog I\Projects\2023\WindowsFormsApplication28\WindowsFormsApplication28\obj\Debug\WindowsFormsApplication28.pdb
+D:\Akademik\Verilen Dersler\Görsel Prog I\Projects\2023\WindowsFormsApplication28\WindowsFormsApplication28\bin\Debug\WindowsFormsApplication28.exe
+D:\Akademik\Verilen Dersler\Görsel Prog I\Projects\2023\WindowsFormsApplication28\WindowsFormsApplication28\bin\Debug\WindowsFormsApplication28.pdb
+D:\Akademik\Verilen Dersler\Görsel Prog I\Projects\2023\WindowsFormsApplication28\WindowsFormsApplication28\obj\Debug\WindowsFormsApplication28.csprojResolveAssemblyReference.cache
+D:\Akademik\Verilen Dersler\Görsel Prog I\Projects\2023\WindowsFormsApplication28\WindowsFormsApplication28\obj\Debug\WindowsFormsApplication28.Form1.resources
+D:\Akademik\Verilen Dersler\Görsel Prog I\Projects\2023\WindowsFormsApplication28\WindowsFormsApplication28\obj\Debug\WindowsFormsApplication28.Properties.Resources.resources
+D:\Akademik\Verilen Dersler\Görsel Prog I\Projects\2023\WindowsFormsApplication28\WindowsFormsApplication28\obj\Debug\WindowsFormsApplication28.csproj.GenerateResource.Cache
