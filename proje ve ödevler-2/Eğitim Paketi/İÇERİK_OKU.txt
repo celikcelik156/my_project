@@ -1,0 +1,15 @@
+Ders konularının sırası
+
+C# diline ait özellikler (değişken tanımlama, if, for, while..)
+aritmetik ve mantıksal işlemler.
+Konsol uygulamaları (ekrana yazı yazdırma ve kullanıcıdan değer alma ile ilgili yapılacak uygulamalar)
+**Konsol uygulamaları c# dilinin yazımını pekiştirmek için kullanılacaktır. Dersin geneli form uygulamalarıdır.
+
+Windows Form Uygulamaları ile konular devam edecektir.
+
+Button, form, textbox, richtextbox, checkbox, radiobutton, listbox, combobox, timer, datetimepicker
+groupbox, label, maskedtextbox ağırlıkla çalışılacak nesnelerdir.
+
+Bu nesnelerin her birinin özelliklerini ve metodlarını öğrenmelisiniz.
+
+Nesneleri öğrendikce nesnelerle ilgili yapılmış geçmiş uygulamaları inceleyiniz. ve örnek uygulamaları yapmaya çalışınız.

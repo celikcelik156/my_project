@@ -1,0 +1,151 @@
+﻿@{
+    ViewBag.Title = "Admin Panel";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<div class="section-header">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <h1 class="page-header">Admin Panel</h1>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container container-int">
+    <!-- Dashboard İstatistikleri -->
+    <div class="row" style="margin-bottom: 30px;">
+        <div class="col-md-3 col-sm-6">
+            <div class="panel panel-primary">
+                <div class="panel-heading">
+                    <div class="row">
+                        <div class="col-xs-3">
+                            <i class="fa fa-file-text fa-3x"></i>
+                        </div>
+                        <div class="col-xs-9 text-right">
+                            <div class="huge">@ViewBag.ToplamBlog</div>
+                            <div>Total Blogs</div>
+                            <div style="font-size: 12px;">@ViewBag.AktifBlog Active</div>
+                        </div>
+                    </div>
+                </div>
+                <a href="@Url.Action("BlogListesi")">
+                    <div class="panel-footer">
+                        <span class="pull-left">View Details</span>
+                        <span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span>
+                        <div class="clearfix"></div>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class="col-md-3 col-sm-6">
+            <div class="panel panel-info">
+                <div class="panel-heading">
+                    <div class="row">
+                        <div class="col-xs-3">
+                            <i class="fa fa-envelope fa-3x"></i>
+                        </div>
+                        <div class="col-xs-9 text-right">
+                            <div class="huge">@ViewBag.OkunmamisMesaj</div>
+                            <div>Unread Messages</div>
+                            <div style="font-size: 12px;">@ViewBag.ToplamMesaj Total</div>
+                        </div>
+                    </div>
+                </div>
+                <a href="@Url.Action("IletisimListesi")">
+                    <div class="panel-footer">
+                        <span class="pull-left">View Details</span>
+                        <span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span>
+                        <div class="clearfix"></div>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class="col-md-3 col-sm-6">
+            <div class="panel panel-warning">
+                <div class="panel-heading">
+                    <div class="row">
+                        <div class="col-xs-3">
+                            <i class="fa fa-users fa-3x"></i>
+                        </div>
+                        <div class="col-xs-9 text-right">
+                            <div class="huge">@ViewBag.ToplamKullanici</div>
+                            <div>Total Users</div>
+                        </div>
+                    </div>
+                </div>
+                <a href="@Url.Action("KullaniciListesi")">
+                    <div class="panel-footer">
+                        <span class="pull-left">View Details</span>
+                        <span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span>
+                        <div class="clearfix"></div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Yönetim Menüsü -->
+    <div class="row">
+        <div class="col-md-12">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h3>Management Menu</h3>
+                </div>
+                <div class="panel-body">
+                    <div class="row">
+                        <div class="col-md-3">
+                            <a href="@Url.Action("BlogListesi")" class="btn btn-primary btn-lg btn-block" style="margin-bottom: 10px;">
+                                <i class="fa fa-file-text"></i> Blog Management
+                            </a>
+                        </div>
+                        <div class="col-md-3">
+                            <a href="@Url.Action("KategoriListesi")" class="btn btn-success btn-lg btn-block" style="margin-bottom: 10px;">
+                                <i class="fa fa-tags"></i> Category Management
+                            </a>
+                        </div>
+                        <div class="col-md-3">
+                            <a href="@Url.Action("SliderListesi")" class="btn btn-info btn-lg btn-block" style="margin-bottom: 10px;">
+                                <i class="fa fa-sliders"></i> Slider Management
+                            </a>
+                        </div>
+                        <div class="col-md-3">
+                            <a href="@Url.Action("PortfolioListesi")" class="btn btn-warning btn-lg btn-block" style="margin-bottom: 10px;">
+                                <i class="fa fa-briefcase"></i> Portfolio Management
+                            </a>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-3">
+                            <a href="@Url.Action("HizmetListesi")" class="btn btn-danger btn-lg btn-block" style="margin-bottom: 10px;">
+                                <i class="fa fa-cog"></i> Service Management
+                            </a>
+                        </div>
+                        <div class="col-md-3">
+                            <a href="@Url.Action("IletisimListesi")" class="btn btn-default btn-lg btn-block" style="margin-bottom: 10px;">
+                                <i class="fa fa-envelope"></i> Contact Messages
+                                @if (ViewBag.OkunmamisMesaj > 0)
+                                {
+                                    <span class="badge" style="background-color: #d9534f;">@ViewBag.OkunmamisMesaj</span>
+                                }
+                            </a>
+                        </div>
+                        <div class="col-md-3">
+                            <a href="@Url.Action("KullaniciListesi")" class="btn btn-default btn-lg btn-block" style="margin-bottom: 10px;">
+                                <i class="fa fa-users"></i> User Management
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<style>
+    .huge {
+        font-size: 40px;
+        font-weight: bold;
+    }
+</style>

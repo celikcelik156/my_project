@@ -1,0 +1,86 @@
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    var sonBloglar = ViewBag.SonBloglar as System.Collections.Generic.List<WebProgramlamaProjesi_MehmetCelik.Models.Blog>;
+}
+
+<div class="section-header">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <h1 class="page-header">Sidebar Page</h1>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container container-int">
+    <ol class="breadcrumb">
+        <li><a href="@Url.Action("Index", "Home")">Home</a></li>
+        <li class="active">Sidebar Page</li>
+    </ol>
+
+    <div class="row">
+        <div class="col-md-8 col-sm-8">
+            <blockquote>
+                <p>We are a creative agency dedicated to providing the best digital solutions for your business. At Algocak, we understand that every business is unique and requires customized solutions. Our team of experts is committed to delivering high-quality services that help your business grow and succeed in today's competitive market.</p>
+            </blockquote>
+
+            <p>At Algocak, we believe in building long-term relationships with our clients. We take the time to understand your business goals, challenges, and opportunities. This allows us to create tailored solutions that not only meet your current needs but also position you for future success.</p>
+
+            <p>Our comprehensive range of services includes web design and development, digital marketing, consulting, and ongoing support. We leverage the latest technologies and best practices to ensure that your digital presence is not only visually appealing but also functional, secure, and optimized for performance.</p>
+
+            <p>With years of experience in the industry, we have helped numerous businesses transform their digital presence and achieve their goals. Whether you're a startup looking to establish your online presence or an established business seeking to enhance your digital strategy, Algocak is here to help you succeed.</p>
+
+            <p>Contact us today to learn more about how we can help your business thrive in the digital world. Our team is ready to discuss your project and provide you with a customized solution that meets your specific needs and budget.</p>
+        </div>
+
+        <div class="col-md-4 col-sm-4 sidebar">
+            <div class="well">
+                <h4>Search</h4>
+                @using (Html.BeginForm("Index", "Blog", FormMethod.Get))
+                {
+                    <div class="input-group">
+                        <input type="text" class="form-control" name="search" placeholder="Search...">
+                        <span class="input-group-btn">
+                            <button class="btn btn-primary" type="submit"><i class="fa fa-search"></i></button>
+                        </span>
+                    </div>
+                }
+            </div>
+
+            @if (sonBloglar != null && sonBloglar.Any())
+            {
+                <ul class="nav nav-tabs" id="widgetTab">
+                    <li class="active"><a href="#latest-news" data-toggle="tab">Recent News</a></li>
+                </ul>
+                <div class="tab-content">
+                    <div class="tab-pane fade in active list-posts" id="latest-news">
+                        <ul>
+                            @foreach (var blog in sonBloglar)
+                            {
+                                <li><a href="@Url.Action("Details", "Blog", new { id = blog.Id })"><i class="fa fa-caret-right"></i> @(blog.Baslik.Length > 60 ? blog.Baslik.Substring(0, 60) + "..." : blog.Baslik)</a></li>
+                            }
+                        </ul>
+                    </div>
+                </div>
+            }
+
+            <div class="well">
+                <h4>Tags</h4>
+                <div class="tags">
+                    <a href="@Url.Action("Index", "Blog")">web</a>
+                    <a href="@Url.Action("Index", "Blog")">design</a>
+                    <a href="@Url.Action("Index", "Blog")">development</a>
+                    <a href="@Url.Action("Index", "Blog")">digital</a>
+                    <a href="@Url.Action("Index", "Blog")">marketing</a>
+                    <a href="@Url.Action("Index", "Blog")">business</a>
+                    <a href="@Url.Action("Index", "Blog")">solutions</a>
+                    <a href="@Url.Action("Index", "Blog")">algocak</a>
+                    <a href="@Url.Action("Index", "Blog")">creative</a>
+                    <a href="@Url.Action("Index", "Blog")">agency</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+

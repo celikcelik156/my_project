@@ -1,0 +1,107 @@
+@model IEnumerable<WebProgramlamaProjesi_MehmetCelik.Models.Portfolio>
+
+@{
+    ViewBag.Title = "Portfolio List";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+
+<script type="text/javascript">
+    var js = jQuery.noConflict(true);
+    js(document).ready(function () {
+        js('#myTable').DataTable(
+            {
+                "language": {
+                    "url": "//cdn.datatables.net/plug-ins/1.10.25/i18n/Turkish.json"
+                }
+            }
+        );
+    }
+    );
+</script>
+
+<div class="section-header">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <h1 class="page-header">Portfolio Management</h1>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container container-int">
+    @if (TempData["SuccessMessage"] != null)
+    {
+        <div class="alert alert-success alert-dismissible" role="alert">
+            <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            @TempData["SuccessMessage"]
+        </div>
+    }
+    @if (TempData["ErrorMessage"] != null)
+    {
+        <div class="alert alert-danger alert-dismissible" role="alert">
+            <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            @TempData["ErrorMessage"]
+        </div>
+    }
+
+    <p>
+        <a href="@Url.Action("PortfolioEkle")" class="btn btn-primary">Add New Portfolio</a>
+        <a href="@Url.Action("Index")" class="btn btn-default">Admin Panel</a>
+    </p>
+
+    @if (Model != null && Model.Any())
+    {
+        <table class="table table-striped table-bordered" id="myTable">
+            <thead>
+                <tr>
+                    <th>Order</th>
+                    <th>Title</th>
+                    <th>Image</th>
+                    <th>Active</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model)
+                {
+                    <tr>
+                        <td>@item.Sira</td>
+                        <td>@item.Baslik</td>
+                        <td>
+                            @if (!string.IsNullOrEmpty(item.ResimYolu))
+                            {
+                                <img src="@item.ResimYolu" style="max-width: 100px; max-height: 50px;" alt="Portfolio Image" />
+                            }
+                            else
+                            {
+                                <span class="text-muted">No Image</span>
+                            }
+                        </td>
+                        <td>
+                            @if (item.Aktif)
+                            {
+                                <span class="label label-success">Yes</span>
+                            }
+                            else
+                            {
+                                <span class="label label-danger">No</span>
+                            }
+                        </td>
+                        <td>
+                            <a href="@Url.Action("PortfolioDuzenle", new { id = item.Id })" class="btn btn-sm btn-warning">Edit</a>
+                            <a href="@Url.Action("PortfolioSil", new { id = item.Id })" class="btn btn-sm btn-danger" onclick="return confirm('Are you sure you want to delete this portfolio item?');">Delete</a>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    }
+    else
+    {
+        <div class="alert alert-info">
+            <i class="fa fa-info-circle"></i> No portfolio items found. <a href="@Url.Action("PortfolioEkle")">Click here</a> to add your first portfolio item.
+        </div>
+    }
+</div>

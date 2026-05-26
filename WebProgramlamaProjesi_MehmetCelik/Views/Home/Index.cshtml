@@ -1,0 +1,112 @@
+﻿@{
+    var hizmetler = ViewBag.Hizmetler as System.Collections.Generic.List<WebProgramlamaProjesi_MehmetCelik.Models.Hizmet>;
+    var portfoliolar = ViewBag.Portfoliolar as System.Collections.Generic.List<WebProgramlamaProjesi_MehmetCelik.Models.Portfolio>;
+}
+
+@Html.Partial("_SlideOgesi")
+
+<div class="section">
+    <div class="container">
+        <div class="row">
+            @if (hizmetler != null && hizmetler.Any())
+            {
+                foreach (var hizmet in hizmetler)
+                {
+                    <div class="col-md-4 col-sm-4">
+                        <div class="block-icon">
+                            @if (!string.IsNullOrEmpty(hizmet.Icon))
+                            {
+                                <i class="@hizmet.Icon"></i>
+                            }
+                            else
+                            {
+                                <i class="fa fa-rocket"></i>
+                            }
+                        </div>
+                        <div class="block-body">
+                            <h2>@hizmet.Baslik</h2>
+                            <div class="line-subtitle"></div>
+                            <p>@hizmet.Aciklama</p>
+                        </div>
+                    </div>
+                }
+            }
+            else
+            {
+                <div class="col-md-4 col-sm-4">
+                    <div class="block-icon">
+                        <i class="fa fa-rocket"></i>
+                    </div>
+                    <div class="block-body">
+                        <h2>Creative Design</h2>
+                        <div class="line-subtitle"></div>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam dignissim placerat lectus, at ornare sapien tempor eget. Etiam vel vestibulum nisl.</p>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-4">
+                    <div class="block-icon">
+                        <i class="fa fa-users"></i>
+                    </div>
+                    <div class="block-body">
+                        <h2>User Friendly</h2>
+                        <div class="line-subtitle"></div>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam dignissim placerat lectus, at ornare sapien tempor eget. Etiam vel vestibulum nisl.</p>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-4">
+                    <div class="block-icon">
+                        <i class="fa fa-cog"></i>
+                    </div>
+                    <div class="block-body">
+                        <h2>Easy Customization</h2>
+                        <div class="line-subtitle"></div>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam dignissim placerat lectus, at ornare sapien tempor eget. Etiam vel vestibulum nisl.</p>
+                    </div>
+                </div>
+            }
+        </div>
+    </div>
+</div>
+
+<div class="section-colored home">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-9 col-sm-8">
+                <h2>We can bring your business project to life</h2>
+            </div>
+            <div class="col-md-3 col-sm-4">
+                <a href="@Url.Action("Contact")" class="btn btn-danger btn-lg">Contact Us</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+@Html.Partial("_TopluResim")
+
+<div class="section-colored">
+    <div class="container">
+        <h3 class="section-title text-center">Some of Our Clients</h3>
+        <div class="container clients">
+            <div class="row">
+                <div class="col-lg-2 col-md-2 col-sm-2 col-xs-6">
+                    <a href="#"><img class="img-responsive" src="/algocak/img/client-1.png" alt="client 1"></a>
+                </div>
+                <div class="col-lg-2 col-md-2 col-sm-2 col-xs-6">
+                    <a href="#"><img class="img-responsive" src="/algocak/img/client-2.png" alt="client 2"></a>
+                </div>
+                <div class="col-lg-2 col-md-2 col-sm-2 col-xs-6">
+                    <a href="#"><img class="img-responsive" src="/algocak/img/client-3.png" alt="client 3"></a>
+                </div>
+                <div class="col-lg-2 col-md-2 col-sm-2 col-xs-6">
+                    <a href="#"><img class="img-responsive" src="/algocak/img/client-4.png" alt="client 4"></a>
+                </div>
+                <div class="col-lg-2 col-md-2 col-sm-2 col-xs-6">
+                    <a href="#"><img class="img-responsive" src="/algocak/img/client-5.png" alt="client 5"></a>
+                </div>
+                <div class="col-lg-2 col-md-2 col-sm-2 col-xs-6">
+                    <a href="#"><img class="img-responsive" src="/algocak/img/client-6.png" alt="client 6"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

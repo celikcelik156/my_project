@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Panel - @ViewBag.Title</title>
+    <link rel="icon" type="image/jpeg" href="/algocak/img/algocak_logo.jpg">
+    <link rel="shortcut icon" type="image/jpeg" href="/algocak/img/algocak_logo.jpg">
+    <link href="~/algocak/css/font-awesome.min.css" rel="stylesheet">
+    <link href="/algocak/css/bootstrap.css" rel="stylesheet">
+    <link href="/algocak/css/style.css" rel="stylesheet">
+    <script type="text/javascript" src="/algocak/js/jquery-1.10.2.js"></script>
+    <script type="text/javascript" src="/algocak/js/bootstrap.js"></script>
+    <script src="~/Content/ckeditor/ckeditor.js"></script>
+
+
+    <script type="text/javascript" src="/algocak/js/jquery-1.10.2.js"></script>
+    <script type="text/javascript" src="/algocak/js/bootstrap.js"></script>
+    <script type="text/javascript" src="/algocak/js/plugins.js"></script>
+    <script type="text/javascript" src="/algocak/js/algocak.js"></script>
+    <script src="~/Content/ckeditor/ckeditor.js"></script>
+    <script src="~/Scripts/DataTables/jquery.dataTables.js"></script>
+    <link href="~/Content/DataTables/css/jquery.dataTables.css" rel="stylesheet" />
+    <script src="~/Scripts/jquery-3.7.1.js"></script>
+    <script src="~/Scripts/bootstrap.min.js"></script>
+    <link href="//cdn.datatables.net/2.0.1/css/dataTables.dataTables.min.css" rel="stylesheet" />
+    <script src="//cdn.datatables.net/2.0.1/js/dataTables.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+</head>
+<body>
+    <nav class="navbar navbar-fixed-top navbar-inverse" role="navigation">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="@Url.Action("Index", "Admin")">Admin Panel</a>
+            </div>
+            <div class="collapse navbar-collapse navbar-ex1-collapse">
+                <ul class="nav navbar-nav">
+                    <li><a href="@Url.Action("Index", "Admin")">Dashboard</a></li>
+                    <li><a href="@Url.Action("BlogListesi", "Admin")">Blog</a></li>
+                    <li><a href="@Url.Action("KategoriListesi", "Admin")">Categories</a></li>
+                    <li><a href="@Url.Action("SliderListesi", "Admin")">Sliders</a></li>
+                    <li><a href="@Url.Action("PortfolioListesi", "Admin")">Portfolio</a></li>
+                    <li><a href="@Url.Action("HizmetListesi", "Admin")">Services</a></li>
+                    <li><a href="@Url.Action("IletisimListesi", "Admin")">Contact</a></li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="@Url.Action("Index", "Home")" target="_blank"><i class="fa fa-external-link"></i> View Site</a></li>
+                    <li><a href="@Url.Action("Logout", "Giris")"><i class="fa fa-sign-out"></i> Logout</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div style="margin-top: 60px;">
+        @RenderBody()
+    </div>
+
+    <footer style="background-color: #333; color: #fff; padding: 20px 0; margin-top: 50px;">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <p>&copy; @DateTime.Now.Year Admin Panel - All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

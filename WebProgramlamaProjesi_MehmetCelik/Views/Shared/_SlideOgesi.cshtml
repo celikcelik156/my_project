@@ -1,0 +1,83 @@
+﻿@{
+    var sliderlar = ViewBag.Sliderlar as System.Collections.Generic.List<WebProgramlamaProjesi_MehmetCelik.Models.Slider>;
+}
+
+@if (sliderlar != null && sliderlar.Any())
+{
+    <div id="myCarousel" class="carousel slide">
+        <ol class="carousel-indicators">
+            @for (int i = 0; i < sliderlar.Count; i++)
+            {
+                <li data-target="#myCarousel" data-slide-to="@i" class="@(i == 0 ? "active" : "")"></li>
+            }
+        </ol>
+
+        <div class="carousel-inner">
+            @foreach (var slider in sliderlar)
+            {
+                <div class="item @(slider == sliderlar.First() ? "active" : "")">
+                    <div class="fill" style="background-image:url('@slider.ResimYolu');"></div>
+                    <div class="carousel-caption">
+                        <h2>@slider.Baslik</h2>
+                        @if (!string.IsNullOrEmpty(slider.Link) && !string.IsNullOrEmpty(slider.LinkMetni))
+                        {
+                            <a href="@slider.Link" class="button">@slider.LinkMetni</a>
+                        }
+                    </div>
+                </div>
+            }
+        </div>
+
+        <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+            <i class="fa fa-angle-left"></i>
+        </a>
+        <a class="right carousel-control" href="#myCarousel" data-slide="next">
+            <i class="fa fa-angle-right"></i>
+        </a>
+    </div>
+}
+
+else
+{
+
+    <div id="myCarousel" class="carousel slide">
+        <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+            <li data-target="#myCarousel" data-slide-to="2"></li>
+        </ol>
+
+        <div class="carousel-inner">
+            <div class="item active">
+                <div class="fill" style="background-image: url('/algocak/img/slide/slide1.png');"></div>
+                <div class="carousel-caption">
+                    <h2>clean and modern design</h2>
+                    <a href="#" class="button">DOWNLOAD</a>
+                </div>
+            </div>
+            <div class="item">
+                <div class="fill" style="background-image: url('/algocak/img/slide/slide2.png');"></div>
+                <div class="carousel-caption">
+                    <h2>fully responsive and retina ready</h2>
+                    <a href="#" class="button">SEE MORE</a>
+                </div>
+            </div>
+            <div class="item">
+                <div class="fill" style="background-image: url('/algocak/img/slide/slide3.png');"></div>
+                <div class="carousel-caption">
+                    <h2>based on twitter bootstrap</h2>
+                    <a href="#" class="button">DOWNLOAD</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Controls -->
+        <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+            <i class="fa fa-angle-left"></i>
+        </a>
+        <a class="right carousel-control" href="#myCarousel" data-slide="next">
+            <i class="fa fa-angle-right"></i>
+        </a>
+    </div>
+
+}

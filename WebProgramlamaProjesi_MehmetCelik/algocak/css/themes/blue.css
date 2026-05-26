@@ -1,0 +1,61 @@
+/* Blue Theme */
+a {
+    color: #28ABCC;
+}
+
+a:hover, a:focus {
+    color: #1E8FA8;
+}
+
+.navbar-inverse .navbar-nav > li > a:hover, .navbar-inverse .navbar-nav > li > a:focus {
+    color: #ffffff;
+    background-color: #1E8FA8;
+}
+
+.navbar-inverse .navbar-nav > .active > a, .navbar-inverse .navbar-nav > .active > a:hover, .navbar-inverse .navbar-nav > .active > a:focus {
+    color: #ffffff;
+    background-color: #1E8FA8;
+}
+
+.navbar-inverse .navbar-nav > .open > a, .navbar-inverse .navbar-nav > .open > a:hover, .navbar-inverse .navbar-nav > .open > a:focus {
+    background-color: #1E8FA8;
+}
+
+.btn-primary {
+    color: #FFF;
+    background-color: #28ABCC;
+    border-color: #1E8FA8;
+}
+
+.btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active, .open .dropdown-toggle.btn-primary {
+    background-color: #1E8FA8;
+}
+
+.form-control:focus {
+    border-color: #28ABCC;
+}
+
+.pagination > .active > a, .pagination > .active > span, .pagination > .active > a:hover, .pagination > .active > span:hover, .pagination > .active > a:focus, .pagination > .active > span:focus {
+    background-color: #1E8FA8;
+}
+
+.tags a {
+    background: #28ABCC;
+}
+
+.tags a:hover {
+    background: #1E8FA8;
+}
+
+.label-default {
+    background-color: #28ABCC;
+}
+
+.block-icon {
+    background: #1E8FA8;
+}
+
+h3.error-404 {
+    color: #1E8FA8;
+}
+

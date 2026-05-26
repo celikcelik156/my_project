@@ -1,0 +1,105 @@
+﻿@using System.Globalization
+@model IEnumerable<WebProgramlamaProjesi_MehmetCelik.Models.Blog>
+
+@{
+    var sonBloglar = ViewBag.SonBloglar as System.Collections.Generic.List<WebProgramlamaProjesi_MehmetCelik.Models.Blog>;
+}
+
+<div class="section-header">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <h1 class="page-header">Blog</h1>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container container-int">
+    <ol class="breadcrumb">
+        <li><a href="@Url.Action("Index", "Home")">Home</a></li>
+        <li class="active">Blog</li>
+    </ol>
+
+    <div class="row">
+        <div class="col-md-8 col-sm-8">
+            @if (Model != null && Model.Any())
+            {
+                foreach (var blog in Model)
+                {
+                    <div class="post">
+                        <h2 class="post-title"><a href="@Url.Action("Details", new { id = blog.Id })">@blog.Baslik</a></h2>
+                        <p class="post-meta">
+                            <i class="fa fa-calendar-o first"></i> @blog.OlusturmaTarihi.ToString("MMMM dd, yyyy", new CultureInfo("en-US"))
+                            <i class="fa fa-user"></i> @(string.IsNullOrEmpty(blog.Yazar) ? "Admin" : blog.Yazar)
+                            <i class="fa fa-eye"></i> @blog.GoruntulenmeSayisi views
+                        </p>
+                        @if (!string.IsNullOrEmpty(blog.ResimYolu))
+                        {
+                            <a href="@Url.Action("Details", new { id = blog.Id })" class="img-post">
+                                <img src="@blog.ResimYolu" alt="@blog.Baslik" class="img-responsive">
+                            </a>
+                        }
+                        @if (!string.IsNullOrEmpty(blog.Icerik))
+                        {
+                            <p>@(blog.Icerik.Length > 200 ? blog.Icerik.Substring(0, 200) + "..." : blog.Icerik)</p>
+                        }
+                        <a class="btn btn-primary" href="@Url.Action("Details", new { id = blog.Id })">Read More <i class="fa fa-angle-right"></i></a>
+                    </div>
+                }
+            }
+            else
+            {
+                <p>No blog posts available.</p>
+            }
+        </div>
+
+        <div class="col-md-4 col-sm-4 sidebar">
+            <div class="well">
+                <h4>Search</h4>
+                @using (Html.BeginForm("Index", "Blog", FormMethod.Get))
+                {
+                    <div class="input-group">
+                        <input type="text" class="form-control" name="search" id="searchInput" placeholder="Search..." value="@ViewBag.Arama">
+                        <span class="input-group-btn">
+                            <button class="btn btn-primary" type="submit"><i class="fa fa-search"></i></button>
+                        </span>
+                    </div>
+                }
+                @if (!string.IsNullOrEmpty(ViewBag.Arama as string))
+                {
+                    <p style="margin-top: 10px;">
+                        <a href="@Url.Action("Index")" class="btn btn-sm btn-default">Clear Search</a>
+                    </p>
+                }
+            </div>
+
+
+            @if (sonBloglar != null && sonBloglar.Any())
+            {
+                <ul class="nav nav-tabs" id="widgetTab">
+                    <li class="active"><a href="#latest-news" data-toggle="tab">Recent News</a></li>
+                </ul>
+                <div class="tab-content">
+                    <div class="tab-pane fade in active list-posts" id="latest-news">
+                        <ul>
+                            @foreach (var blog in sonBloglar)
+                            {
+                                <li><a href="@Url.Action("Details", new { id = blog.Id })"><i class="fa fa-caret-right"></i> @(blog.Baslik.Length > 60 ? blog.Baslik.Substring(0, 60) + "..." : blog.Baslik)</a></li>
+                            }
+                        </ul>
+                    </div>
+                </div>
+            }
+        </div>
+    </div>
+</div>
+
+@if (!string.IsNullOrEmpty(ViewBag.Arama as string))
+{
+    <div class="container container-int">
+        <div class="alert alert-info">
+            <i class="fa fa-info-circle"></i> Search results for: <strong>@ViewBag.Arama</strong>
+        </div>
+    </div>
+}

@@ -1,0 +1,61 @@
+@model IEnumerable<WebProgramlamaProjesi_MehmetCelik.Models.Portfolio>
+
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="section-header">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <h1 class="page-header">Portfolio</h1>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container container-int">
+    <ol class="breadcrumb">
+        <li><a href="@Url.Action("Index", "Home")">Home</a></li>
+        <li class="active">Portfolio</li>
+    </ol>
+
+    <div class="row">
+        <div class="col-lg-12">
+            @if (Model != null && Model.Any())
+            {
+                var portfolioList = Model.ToList();
+                for (int i = 0; i < portfolioList.Count; i += 3)
+                {
+                    <div class="row">
+                        @for (int j = i; j < Math.Min(i + 3, portfolioList.Count); j++)
+                        {
+                            var portfolio = portfolioList[j];
+                            <div class="col-md-4 col-sm-4 portfolio-item">
+                                <a href="@Url.Action("Details", "Portfolio", new { id = portfolio.Id })" class="link-portfolio">
+                                    <div class="overlay-portfolio">
+                                        <h3>@portfolio.Baslik</h3>
+                                        @if (!string.IsNullOrEmpty(portfolio.Aciklama))
+                                        {
+                                            <small class="text-muted">
+                                                @(portfolio.Aciklama.Length > 100 ? portfolio.Aciklama.Substring(0, 100) + "..." : portfolio.Aciklama)
+                                            </small>
+                                        }
+                                    </div>
+                                    <img class="img-responsive img-home-portfolio" src="@portfolio.ResimYolu" alt="@portfolio.Baslik">
+                                </a>
+                            </div>
+                        }
+                    </div>
+                }
+            }
+            else
+            {
+                <div class="alert alert-info">
+                    <i class="fa fa-info-circle"></i> No portfolio items available.
+                </div>
+            }
+        </div>
+    </div>
+</div>
+

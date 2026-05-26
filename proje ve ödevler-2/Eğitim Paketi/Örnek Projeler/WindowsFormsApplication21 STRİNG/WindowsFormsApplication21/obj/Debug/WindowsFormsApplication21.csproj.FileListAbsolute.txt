@@ -1,0 +1,30 @@
+c:\users\user\documents\visual studio 2012\Projects\WindowsFormsApplication21\WindowsFormsApplication21\bin\Debug\WindowsFormsApplication21.exe.config
+c:\users\user\documents\visual studio 2012\Projects\WindowsFormsApplication21\WindowsFormsApplication21\bin\Debug\Database3.mdb
+c:\users\user\documents\visual studio 2012\Projects\WindowsFormsApplication21\WindowsFormsApplication21\bin\Debug\WindowsFormsApplication21.exe
+c:\users\user\documents\visual studio 2012\Projects\WindowsFormsApplication21\WindowsFormsApplication21\bin\Debug\WindowsFormsApplication21.pdb
+c:\users\user\documents\visual studio 2012\Projects\WindowsFormsApplication21\WindowsFormsApplication21\obj\Debug\WindowsFormsApplication21.csprojResolveAssemblyReference.cache
+c:\users\user\documents\visual studio 2012\Projects\WindowsFormsApplication21\WindowsFormsApplication21\obj\Debug\WindowsFormsApplication21.Form1.resources
+c:\users\user\documents\visual studio 2012\Projects\WindowsFormsApplication21\WindowsFormsApplication21\obj\Debug\WindowsFormsApplication21.Properties.Resources.resources
+c:\users\user\documents\visual studio 2012\Projects\WindowsFormsApplication21\WindowsFormsApplication21\obj\Debug\WindowsFormsApplication21.csproj.GenerateResource.Cache
+c:\users\user\documents\visual studio 2012\Projects\WindowsFormsApplication21\WindowsFormsApplication21\obj\Debug\WindowsFormsApplication21.exe
+c:\users\user\documents\visual studio 2012\Projects\WindowsFormsApplication21\WindowsFormsApplication21\obj\Debug\WindowsFormsApplication21.pdb
+D:\Akademik\Verilen Dersler\Görsel Prog I\Projects\WindowsFormsApplication21\WindowsFormsApplication21\bin\Debug\WindowsFormsApplication21.exe.config
+D:\Akademik\Verilen Dersler\Görsel Prog I\Projects\WindowsFormsApplication21\WindowsFormsApplication21\obj\Debug\WindowsFormsApplication21.exe
+D:\Akademik\Verilen Dersler\Görsel Prog I\Projects\WindowsFormsApplication21\WindowsFormsApplication21\obj\Debug\WindowsFormsApplication21.pdb
+D:\Akademik\Verilen Dersler\Görsel Prog I\Projects\WindowsFormsApplication21\WindowsFormsApplication21\bin\Debug\Database3.mdb
+D:\Akademik\Verilen Dersler\Görsel Prog I\Projects\WindowsFormsApplication21\WindowsFormsApplication21\bin\Debug\WindowsFormsApplication21.exe
+D:\Akademik\Verilen Dersler\Görsel Prog I\Projects\WindowsFormsApplication21\WindowsFormsApplication21\bin\Debug\WindowsFormsApplication21.pdb
+D:\Akademik\Verilen Dersler\Görsel Prog I\Projects\WindowsFormsApplication21\WindowsFormsApplication21\obj\Debug\WindowsFormsApplication21.csprojResolveAssemblyReference.cache
+D:\Akademik\Verilen Dersler\Görsel Prog I\Projects\WindowsFormsApplication21\WindowsFormsApplication21\obj\Debug\WindowsFormsApplication21.Form1.resources
+D:\Akademik\Verilen Dersler\Görsel Prog I\Projects\WindowsFormsApplication21\WindowsFormsApplication21\obj\Debug\WindowsFormsApplication21.Properties.Resources.resources
+D:\Akademik\Verilen Dersler\Görsel Prog I\Projects\WindowsFormsApplication21\WindowsFormsApplication21\obj\Debug\WindowsFormsApplication21.csproj.GenerateResource.Cache
+D:\Akademik\Verilen Dersler\Görsel Prog I\Projects\WindowsFormsApplication21 STRİNG\WindowsFormsApplication21\bin\Debug\WindowsFormsApplication21.exe.config
+D:\Akademik\Verilen Dersler\Görsel Prog I\Projects\WindowsFormsApplication21 STRİNG\WindowsFormsApplication21\obj\Debug\WindowsFormsApplication21.exe
+D:\Akademik\Verilen Dersler\Görsel Prog I\Projects\WindowsFormsApplication21 STRİNG\WindowsFormsApplication21\obj\Debug\WindowsFormsApplication21.pdb
+D:\Akademik\Verilen Dersler\Görsel Prog I\Projects\WindowsFormsApplication21 STRİNG\WindowsFormsApplication21\bin\Debug\Database3.mdb
+D:\Akademik\Verilen Dersler\Görsel Prog I\Projects\WindowsFormsApplication21 STRİNG\WindowsFormsApplication21\bin\Debug\WindowsFormsApplication21.exe
+D:\Akademik\Verilen Dersler\Görsel Prog I\Projects\WindowsFormsApplication21 STRİNG\WindowsFormsApplication21\bin\Debug\WindowsFormsApplication21.pdb
+D:\Akademik\Verilen Dersler\Görsel Prog I\Projects\WindowsFormsApplication21 STRİNG\WindowsFormsApplication21\obj\Debug\WindowsFormsApplication21.csprojResolveAssemblyReference.cache
+D:\Akademik\Verilen Dersler\Görsel Prog I\Projects\WindowsFormsApplication21 STRİNG\WindowsFormsApplication21\obj\Debug\WindowsFormsApplication21.Form1.resources
+D:\Akademik\Verilen Dersler\Görsel Prog I\Projects\WindowsFormsApplication21 STRİNG\WindowsFormsApplication21\obj\Debug\WindowsFormsApplication21.Properties.Resources.resources
+D:\Akademik\Verilen Dersler\Görsel Prog I\Projects\WindowsFormsApplication21 STRİNG\WindowsFormsApplication21\obj\Debug\WindowsFormsApplication21.csproj.GenerateResource.Cache

@@ -1,0 +1,137 @@
+﻿@{
+    var hizmetler = ViewBag.Hizmetler as System.Collections.Generic.List<WebProgramlamaProjesi_MehmetCelik.Models.Hizmet>;
+}
+
+<div class="section-header">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <h1 class="page-header">Services</h1>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container container-int">
+    <ol class="breadcrumb">
+        <li><a href="@Url.Action("Index", "Home")">Home</a></li>
+        <li class="active">Services</li>
+    </ol>
+
+    <div class="row">
+        <div class="col-lg-12">
+            <blockquote>
+                <p>We are a creative agency dedicated to providing the best digital solutions for your business. Connect with us to elevate your brand and achieve your goals with our comprehensive range of services.</p>
+            </blockquote>
+
+            <p>At Algocak, we understand that every business is unique. That's why we offer customized solutions tailored to your specific needs. Our team of experts is committed to delivering high-quality services that help your business grow and succeed in today's competitive market.</p>
+        </div>
+    </div>
+
+    @if (hizmetler != null && hizmetler.Any())
+    {
+        <div class="row pricing-table">
+            @foreach (var hizmet in hizmetler)
+            {
+                <div class="col-sm-3">
+                    <div class="panel panel-default text-center">
+                        <div class="panel-heading">
+                            <strong>@hizmet.Baslik</strong>
+                        </div>
+                        <div class="panel-body">
+                            @if (!string.IsNullOrEmpty(hizmet.Icon))
+                            {
+                                <i class="@hizmet.Icon" style="font-size: 48px; color: #337ab7;"></i>
+                            }
+                            else
+                            {
+                                <i class="fa fa-cog" style="font-size: 48px; color: #337ab7;"></i>
+                            }
+                        </div>
+                        <ul class="list-group">
+                            @if (!string.IsNullOrEmpty(hizmet.Aciklama))
+                            {
+                                <li class="list-group-item">@hizmet.Aciklama</li>
+                            }
+                            else
+                            {
+
+                                <li class="list-group-item">Professional service</li>
+                            }
+                            <li class="list-group-item"><a href="@Url.Action("Contact", "Home")" class="btn btn-primary">Contact Us</a></li>
+                        </ul>
+                    </div>
+                </div>
+            }
+        </div>
+    }
+    else
+    {
+        <div class="row pricing-table">
+            <div class="col-sm-3">
+                <div class="panel panel-default text-center">
+                    <div class="panel-heading">
+                        <strong>Web Design</strong>
+                    </div>
+                    <div class="panel-body">
+                        <i class="fa fa-desktop" style="font-size: 48px; color: #337ab7;"></i>
+                    </div>
+                    <ul class="list-group">
+                        <li class="list-group-item">Custom website design</li>
+                        <li class="list-group-item">Responsive layouts</li>
+                        <li class="list-group-item">User experience optimization</li>
+                        <li class="list-group-item"><a href="@Url.Action("Contact", "Home")" class="btn btn-primary">Contact Us</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-sm-3">
+                <div class="panel panel-default text-center">
+                    <div class="panel-heading">
+                        <strong>Development</strong>
+                    </div>
+                    <div class="panel-body">
+                        <i class="fa fa-code" style="font-size: 48px; color: #337ab7;"></i>
+                    </div>
+                    <ul class="list-group">
+                        <li class="list-group-item">Web application development</li>
+                        <li class="list-group-item">Mobile solutions</li>
+                        <li class="list-group-item">API integration</li>
+                        <li class="list-group-item"><a href="@Url.Action("Contact", "Home")" class="btn btn-primary">Contact Us</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-sm-3">
+                <div class="panel panel-default text-center">
+                    <div class="panel-heading">
+                        <strong>Consulting</strong>
+                    </div>
+                    <div class="panel-body">
+                        <i class="fa fa-lightbulb-o" style="font-size: 48px; color: #337ab7;"></i>
+                    </div>
+                    <ul class="list-group">
+                        <li class="list-group-item">Business strategy</li>
+                        <li class="list-group-item">Technical consulting</li>
+                        <li class="list-group-item">Project management</li>
+                        <li class="list-group-item"><a href="@Url.Action("Contact", "Home")" class="btn btn-primary">Contact Us</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-sm-3">
+                <div class="panel panel-default text-center">
+                    <div class="panel-heading">
+                        <strong>Support</strong>
+                    </div>
+                    <div class="panel-body">
+                        <i class="fa fa-support" style="font-size: 48px; color: #337ab7;"></i>
+                    </div>
+                    <ul class="list-group">
+                        <li class="list-group-item">24/7 technical support</li>
+                        <li class="list-group-item">Maintenance services</li>
+                        <li class="list-group-item">Training and documentation</li>
+                        <li class="list-group-item"><a href="@Url.Action("Contact", "Home")" class="btn btn-primary">Contact Us</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    }
+</div>

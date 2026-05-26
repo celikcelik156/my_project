@@ -1,0 +1,98 @@
+@model WebProgramlamaProjesi_MehmetCelik.Models.Blog
+
+@{
+    ViewBag.Title = "Edit Blog";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<div class="section-header">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <h1 class="page-header">Edit Blog</h1>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container container-int">
+
+    @using (Html.BeginForm("BlogDuzenle", "Admin", FormMethod.Post, new { enctype = "multipart/form-data" }))
+    {
+        @Html.AntiForgeryToken()
+        @Html.HiddenFor(model => model.Id)
+        @Html.HiddenFor(model => model.OlusturmaTarihi)
+        @Html.HiddenFor(model => model.GoruntulenmeSayisi)
+        @Html.HiddenFor(model => model.ResimYolu)
+
+        <div class="form-horizontal">
+            @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+
+            <div class="form-group">
+                @Html.LabelFor(model => model.Baslik, "Title", htmlAttributes: new { @class = "control-label col-md-2" })
+                <div class="col-md-10">
+                    @Html.EditorFor(model => model.Baslik, new { htmlAttributes = new { @class = "form-control" } })
+                    @Html.ValidationMessageFor(model => model.Baslik, "", new { @class = "text-danger" })
+                </div>
+            </div>
+
+            <div class="form-group">
+                @Html.LabelFor(model => model.KategoriId, "Category", htmlAttributes: new { @class = "control-label col-md-2" })
+                <div class="col-md-10">
+                    @Html.DropDownList("KategoriId", null, "Select Category", htmlAttributes: new { @class = "form-control" })
+                    @Html.ValidationMessageFor(model => model.KategoriId, "", new { @class = "text-danger" })
+                </div>
+            </div>
+
+            <div class="form-group">
+                @Html.LabelFor(model => model.Icerik, "Content", htmlAttributes: new { @class = "control-label col-md-2" })
+                <div class="col-md-10">
+                    @Html.TextAreaFor(model => model.Icerik, new { @class = "form-control", rows = "10" })
+                    @Html.ValidationMessageFor(model => model.Icerik, "", new { @class = "text-danger" })
+                </div>
+            </div>
+
+            <div class="form-group">
+                @Html.Label("Resim Yükle", htmlAttributes: new { @class = "control-label col-md-2" })
+                <div class="col-md-10">
+                    @if (!string.IsNullOrEmpty(Model.ResimYolu))
+                    {
+                        <div style="margin-bottom:10px;">
+                            <img src="@Model.ResimYolu" width="150" />
+                            <p>Mevcut Resim</p>
+                        </div>
+                    }
+
+                    <input type="file" name="ResimDosyasi" class="form-control" accept=".jpg,.png,.jpeg" />
+                    @Html.ValidationMessageFor(model => model.ResimYolu, "", new { @class = "text-danger" })
+                </div>
+            </div>
+
+            <div class="form-group">
+                @Html.LabelFor(model => model.Yazar, "Author", htmlAttributes: new { @class = "control-label col-md-2" })
+                <div class="col-md-10">
+                    @Html.EditorFor(model => model.Yazar, new { htmlAttributes = new { @class = "form-control" } })
+                    @Html.ValidationMessageFor(model => model.Yazar, "", new { @class = "text-danger" })
+                </div>
+            </div>
+
+            <div class="form-group">
+                @Html.LabelFor(model => model.Aktif, "Active", htmlAttributes: new { @class = "control-label col-md-2" })
+                <div class="col-md-10">
+                    <div class="checkbox">
+                        @Html.EditorFor(model => model.Aktif)
+                        @Html.ValidationMessageFor(model => model.Aktif, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <div class="col-md-offset-2 col-md-10">
+                    <input type="submit" value="Update" class="btn btn-primary" />
+
+                    <a href="@Url.Action("BlogListesi")" class="btn btn-default">Cancel</a>
+                </div>
+            </div>
+        </div>
+    }
+</div>

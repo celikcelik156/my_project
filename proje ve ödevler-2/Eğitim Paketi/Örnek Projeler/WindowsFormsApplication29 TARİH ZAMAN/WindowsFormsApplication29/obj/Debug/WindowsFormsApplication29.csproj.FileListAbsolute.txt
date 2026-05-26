@@ -1,0 +1,15 @@
+c:\users\user\documents\visual studio 2012\Projects\WindowsFormsApplication29\WindowsFormsApplication29\bin\Debug\WindowsFormsApplication29.exe.config
+c:\users\user\documents\visual studio 2012\Projects\WindowsFormsApplication29\WindowsFormsApplication29\bin\Debug\WindowsFormsApplication29.exe
+c:\users\user\documents\visual studio 2012\Projects\WindowsFormsApplication29\WindowsFormsApplication29\bin\Debug\WindowsFormsApplication29.pdb
+c:\users\user\documents\visual studio 2012\Projects\WindowsFormsApplication29\WindowsFormsApplication29\obj\Debug\WindowsFormsApplication29.csprojResolveAssemblyReference.cache
+c:\users\user\documents\visual studio 2012\Projects\WindowsFormsApplication29\WindowsFormsApplication29\obj\Debug\WindowsFormsApplication29.Form1.resources
+c:\users\user\documents\visual studio 2012\Projects\WindowsFormsApplication29\WindowsFormsApplication29\obj\Debug\WindowsFormsApplication29.Properties.Resources.resources
+c:\users\user\documents\visual studio 2012\Projects\WindowsFormsApplication29\WindowsFormsApplication29\obj\Debug\WindowsFormsApplication29.csproj.GenerateResource.Cache
+c:\users\user\documents\visual studio 2012\Projects\WindowsFormsApplication29\WindowsFormsApplication29\obj\Debug\WindowsFormsApplication29.exe
+c:\users\user\documents\visual studio 2012\Projects\WindowsFormsApplication29\WindowsFormsApplication29\obj\Debug\WindowsFormsApplication29.pdb
+C:\Users\user\Documents\Visual Studio 2012\Projects\2023\WindowsFormsApplication29 TARİH ZAMAN\WindowsFormsApplication29\bin\Debug\WindowsFormsApplication29.exe.config
+C:\Users\user\Documents\Visual Studio 2012\Projects\2023\WindowsFormsApplication29 TARİH ZAMAN\WindowsFormsApplication29\obj\Debug\WindowsFormsApplication29.exe
+C:\Users\user\Documents\Visual Studio 2012\Projects\2023\WindowsFormsApplication29 TARİH ZAMAN\WindowsFormsApplication29\obj\Debug\WindowsFormsApplication29.pdb
+D:\Akademik\Verilen Dersler\Görsel Prog I\Projects\2023\WindowsFormsApplication29 TARİH ZAMAN\WindowsFormsApplication29\bin\Debug\WindowsFormsApplication29.exe.config
+D:\Akademik\Verilen Dersler\Görsel Prog I\Projects\2023\WindowsFormsApplication29 TARİH ZAMAN\WindowsFormsApplication29\obj\Debug\WindowsFormsApplication29.exe
+D:\Akademik\Verilen Dersler\Görsel Prog I\Projects\2023\WindowsFormsApplication29 TARİH ZAMAN\WindowsFormsApplication29\obj\Debug\WindowsFormsApplication29.pdb

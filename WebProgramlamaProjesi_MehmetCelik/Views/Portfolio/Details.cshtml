@@ -1,0 +1,83 @@
+@model WebProgramlamaProjesi_MehmetCelik.Models.Portfolio
+
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    var relatedPortfolios = ViewBag.RelatedPortfolios as System.Collections.Generic.List<WebProgramlamaProjesi_MehmetCelik.Models.Portfolio>;
+}
+
+<div class="section-header">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <h1 class="page-header">@(Model != null ? Model.Baslik : "Portfolio")</h1>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container container-int">
+    <ol class="breadcrumb">
+        <li><a href="@Url.Action("Index", "Home")">Home</a></li>
+        <li><a href="@Url.Action("Index", "Portfolio")">Portfolio</a></li>
+        @if (Model != null)
+        {
+            <li class="active">@Model.Baslik</li>
+        }
+    </ol>
+
+    @if (Model != null)
+    {
+        <div class="row">
+            <div class="col-md-8">
+                <img class="img-responsive" src="@Model.ResimYolu" alt="@Model.Baslik">
+            </div>
+
+            <div class="col-md-4">
+                <h3><small>Title</small></h3>
+                <p>@Model.Baslik</p>
+                
+                @if (!string.IsNullOrEmpty(Model.Aciklama))
+                {
+                    <h3>Description</h3>
+                    <p>@Model.Aciklama</p>
+                }
+
+                @if (!string.IsNullOrEmpty(Model.Link))
+                {
+                    <a href="@Model.Link" target="_blank" class="btn btn-primary">Visit Project <i class="fa fa-external-link"></i></a>
+                }
+            </div>
+        </div>
+    }
+
+    @if (Model != null && relatedPortfolios != null && relatedPortfolios.Any())
+    {
+        <div class="row">
+            <div class="col-lg-12">
+                <h3 class="page-header">Related Projects</h3>
+            </div>
+
+            @foreach (var portfolio in relatedPortfolios.Take(4))
+            {
+                <div class="col-sm-3 col-xs-6">
+                    <a href="@Url.Action("Details", "Portfolio", new { id = portfolio.Id })" class="link-portfolio">
+                        <div class="overlay-portfolio">
+                            <h3>@portfolio.Baslik</h3>
+                        </div>
+                        <img class="img-responsive img-customer" src="@portfolio.ResimYolu" alt="@portfolio.Baslik">
+                    </a>
+                </div>
+            }
+        </div>
+    }
+
+    @if (Model == null)
+    {
+        <div class="alert alert-danger">
+            <h3>Portfolio Item Not Found</h3>
+            <p>@(ViewBag.ErrorMessage ?? "The portfolio item you are looking for does not exist or is not available.")</p>
+            <a href="@Url.Action("Index", "Portfolio")" class="btn btn-primary">Back to Portfolio List</a>
+        </div>
+    }
+</div>
+

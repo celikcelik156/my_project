@@ -1,0 +1,61 @@
+/* Violet Theme */
+a {
+    color: #9b59b6;
+}
+
+a:hover, a:focus {
+    color: #8e44ad;
+}
+
+.navbar-inverse .navbar-nav > li > a:hover, .navbar-inverse .navbar-nav > li > a:focus {
+    color: #ffffff;
+    background-color: #8e44ad;
+}
+
+.navbar-inverse .navbar-nav > .active > a, .navbar-inverse .navbar-nav > .active > a:hover, .navbar-inverse .navbar-nav > .active > a:focus {
+    color: #ffffff;
+    background-color: #8e44ad;
+}
+
+.navbar-inverse .navbar-nav > .open > a, .navbar-inverse .navbar-nav > .open > a:hover, .navbar-inverse .navbar-nav > .open > a:focus {
+    background-color: #8e44ad;
+}
+
+.btn-primary {
+    color: #FFF;
+    background-color: #9b59b6;
+    border-color: #8e44ad;
+}
+
+.btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active, .open .dropdown-toggle.btn-primary {
+    background-color: #8e44ad;
+}
+
+.form-control:focus {
+    border-color: #9b59b6;
+}
+
+.pagination > .active > a, .pagination > .active > span, .pagination > .active > a:hover, .pagination > .active > span:hover, .pagination > .active > a:focus, .pagination > .active > span:focus {
+    background-color: #8e44ad;
+}
+
+.tags a {
+    background: #9b59b6;
+}
+
+.tags a:hover {
+    background: #8e44ad;
+}
+
+.label-default {
+    background-color: #9b59b6;
+}
+
+.block-icon {
+    background: #8e44ad;
+}
+
+h3.error-404 {
+    color: #8e44ad;
+}
+

@@ -1,0 +1,367 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Algocak</title>
+    <link rel="icon" type="image/jpeg" href="/algocak/img/algocak_logo.jpg">
+    <link rel="shortcut icon" type="image/jpeg" href="/algocak/img/algocak_logo.jpg">
+
+    <link href="~/algocak/css/font-awesome.min.css" rel="stylesheet">
+    <link href="/algocak/css/bootstrap.css" rel="stylesheet">
+    <link href="/algocak/css/style.css" rel="stylesheet">
+    <link href="/algocak/js/switcher/switcher.css" rel="stylesheet">
+
+    <script type="text/javascript" src="/algocak/js/jquery-1.10.2.js"></script>
+    <script type="text/javascript" src="/algocak/js/bootstrap.js"></script>
+    <script type="text/javascript" src="/algocak/js/plugins.js"></script>
+    <script type="text/javascript" src="/algocak/js/algocak.js"></script>
+    <script src="~/Content/ckeditor/ckeditor.js"></script>
+    <script src="~/Scripts/DataTables/jquery.dataTables.js"></script>
+    <link href="~/Content/DataTables/css/jquery.dataTables.css" rel="stylesheet" />
+    <script src="~/Scripts/jquery-3.7.1.js"></script>
+    <script src="~/Scripts/bootstrap.min.js"></script>
+    <link href="//cdn.datatables.net/2.0.1/css/dataTables.dataTables.min.css" rel="stylesheet" />
+    <script src="//cdn.datatables.net/2.0.1/js/dataTables.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+</head>
+
+
+<body>
+
+    <nav class="navbar navbar-fixed-top navbar-inverse" role="navigation">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+
+                <a class="navbar-brand" href="@Url.Action("Index", "Home")">Algocak</a>
+            </div>
+
+            <div class="collapse navbar-collapse navbar-ex1-collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="active"><a href="~/Home/Index">Home</a></li>
+                    <li><a href="~/Home/Services">Services</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown">Portfolio <i class="fa fa-angle-down"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="@Url.Action("Index", "Portfolio")">1 Column Portfolio</a></li>
+                            <li><a href="@Url.Action("TwoColumn", "Portfolio")">2 Column Portfolio</a></li>
+                            <li><a href="@Url.Action("ThreeColumn", "Portfolio")">3 Column Portfolio</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown">Blog <i class="fa fa-angle-down"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="@Url.Action("Index", "Blog")">Blog Home</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown">Other Pages <i class="fa fa-angle-down"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="@Url.Action("FullWidth", "OtherPages")">Full Width Page</a></li>
+                            <li><a href="@Url.Action("Sidebar", "OtherPages")">Sidebar Page</a></li>
+                            <li><a href="@Url.Action("FAQ", "OtherPages")">FAQ</a></li>
+                            <li><a href="@Url.Action("NotFound404", "OtherPages")">404</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="~/Home/Contact">Contact</a></li>
+                    @if (WebProgramlamaProjesi_MehmetCelik.Models.SessionHelper.IsLoggedIn())
+                    {
+                        <li><a href="@Url.Action("Logout", "Giris")">Logout (@WebProgramlamaProjesi_MehmetCelik.Models.SessionHelper.GetUserName())</a></li>
+                    }
+                    else
+                    {
+                        <li><a href="~/Giris/Giris">Sign In</a></li>
+                    }
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    @RenderBody()
+
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-3">
+                    <a class="footer-brand" href="@Url.Action("Index", "Home")">Algocak</a>
+                    <p>We are a creative agency dedicated to providing the best digital solutions for your business. Connect with us to elevate your brand.</p>
+                    <ul class="list-inline list-unstyled social-networks">
+                        <li>
+                            <a href="#">
+                                <div class="icon-social icon-social-facebook normal">
+                                    <i class="fa fa-facebook"></i>
+                                </div>
+                                <div class="icon-social hover">
+                                    <i class="fa fa-facebook"></i>
+                                </div>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#">
+                                <div class="icon-social icon-social-twitter normal">
+                                    <i class="fa fa-twitter"></i>
+                                </div>
+                                <div class="icon-social hover">
+                                    <i class="fa fa-twitter"></i>
+                                </div>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#">
+                                <div class="icon-social icon-social-google-plus normal">
+                                    <i class="fa fa-google-plus"></i>
+                                </div>
+                                <div class="icon-social hover">
+                                    <i class="fa fa-google-plus"></i>
+                                </div>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#">
+                                <div class="icon-social icon-social-youtube normal">
+                                    <i class="fa fa-youtube-play"></i>
+                                </div>
+                                <div class="icon-social hover">
+                                    <i class="fa fa-youtube-play"></i>
+                                </div>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#">
+                                <div class="icon-social icon-social-linkedin normal">
+                                    <i class="fa fa-linkedin"></i>
+                                </div>
+                                <div class="icon-social hover">
+                                    <i class="fa fa-linkedin"></i>
+                                </div>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#">
+                                <div class="icon-social icon-social-pinterest normal">
+                                    <i class="fa fa-pinterest"></i>
+                                </div>
+                                <div class="icon-social hover">
+                                    <i class="fa fa-pinterest"></i>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-3">
+                    <h3>CONTACT</h3>
+                    <address>
+                        <i class="fa fa-map-marker"></i> 123 My Street, Algocak City, CA 4567<br>
+                        <i class="fa fa-phone"></i> (123) 456-7890<br>
+                        <i class="fa fa-envelope"></i> info@algocak.com
+                    </address>
+                </div>
+
+                <div class="col-lg-3 col-md-3">
+                    <h3>LATEST TWEETS</h3>
+                    <ul class="latest-tweets">
+                        <li>
+                            <i class="fa fa-twitter"></i> Check out our latest project launch! We are excited to share our new designs. #webdesign #creative
+                        </li>
+                        <li>
+                            <i class="fa fa-twitter"></i> We are hiring! Join our team today and start your journey with us. #hiring #jobs
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-3 col-md-3">
+                    <h3>NEWSLETTER</h3>
+                    <p>Type your email address below and subscribe to our newsletter</p>
+                    <div class="input-group">
+                        <input type="text" placeholder="Email" class="form-control">
+                        <span class="input-group-btn">
+                            <button class="btn btn-primary" type="button">Go!</button>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <div class="footer-after">
+        <div class="container">
+            <div class="row">
+                <p class="col-md-10">©@DateTime.Now.Year All rights reserved. Designed by Mehmet Çelik</p>
+                <p class="col-md-2 legal"><a href="#" rel="nofollow">Legal Notice</a></p>
+            </div>
+        </div>
+    </div>
+
+    @RenderSection("Scripts", required: false)
+    
+    <script type="text/javascript">
+        function setCookie(key, value) {
+            var expires = new Date();
+            expires.setTime(expires.getTime() + (365 * 24 * 60 * 60 * 1000));
+            document.cookie = key + '=' + value + ';expires=' + expires.toUTCString() + ';path=/';
+        }
+
+        function getCookie(key) {
+            var keyValue = document.cookie.match('(^|;) ?' + key + '=([^;]*)(;|$)');
+            return keyValue ? keyValue[2] : null;
+        }
+
+        (function() {
+            function initSwitcher() {
+                if (typeof jQuery === 'undefined' && typeof window.jQuery === 'undefined') {
+                    setTimeout(initSwitcher, 100);
+                    return;
+                }
+                
+                var $ = window.jQuery || jQuery;
+                
+                $(document).ready(function() {
+                    console.log('Switcher initialized');
+                    
+                    var savedTheme = getCookie('theme');
+                    if (savedTheme && savedTheme != 'default') {
+                        if (!$('#theme-stylesheet').length) {
+                            $('head').append('<link href="/algocak/css/themes/' + savedTheme + '.css" rel="stylesheet" id="theme-stylesheet">');
+                        }
+                    }
+
+                    $(".switcher-btn").on("click", function(event) {
+                        event.preventDefault();
+                        event.stopPropagation();
+                        console.log('Switcher button clicked');
+                        var $switcher = $("#switcher-options");
+                        if ($switcher.length) {
+                            var currentLeft = $switcher.css('left');
+                            console.log('Current left:', currentLeft);
+                            if (currentLeft == '0px' || currentLeft == '0') {
+                                $switcher.animate({ left: '-176px' }, 500);
+                            } else {
+                                $switcher.animate({ left: 0 }, 500);
+                            }
+                        } else {
+                            console.log('Switcher element not found');
+                        }
+                        return false;
+                    });
+
+                    $(".theme-colour").on('click', function(event) {
+                        event.preventDefault();
+                        event.stopPropagation();
+                        var theme = $(this).attr('data-name');
+                        console.log('Theme clicked:', theme);
+                        if (!theme) return false;
+
+                        setCookie('theme', theme);
+                        $("#theme-stylesheet").remove();
+
+                        if (theme != 'default') {
+                            $('head').append('<link href="/algocak/css/themes/' + theme + '.css" rel="stylesheet" id="theme-stylesheet">');
+                        }
+                        return false;
+                    });
+                });
+            }
+            
+            if (document.readyState === 'complete') {
+                initSwitcher();
+            } else {
+                window.addEventListener('load', initSwitcher);
+                if (document.addEventListener) {
+                    document.addEventListener('DOMContentLoaded', initSwitcher);
+                }
+            }
+        })();
+    </script>
+    
+    @if (ViewContext.RouteData.Values["controller"].ToString() == "Home" && ViewContext.RouteData.Values["action"].ToString() == "Contact")
+    {
+        <!-- Google Maps API - API key olmadan da çalışır (sınırlı kullanım) -->
+        <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?callback=initializeMap" async defer></script>
+        <script type="text/javascript">
+            var myLatlng;
+            var map;
+            var marker;
+
+            function initializeMap() {
+                // Koordinatları kendi adresinize göre güncelleyebilirsiniz
+                // Örnek: İstanbul koordinatları (41.0082, 28.9784)
+                myLatlng = new google.maps.LatLng(41.0082, 28.9784);
+
+                var mapOptions = {
+                    zoom: 13,
+                    center: myLatlng,
+                    mapTypeId: google.maps.MapTypeId.ROADMAP,
+                    scrollwheel: true,
+                    draggable: true
+                };
+                
+                var mapElement = document.getElementById('map-canvas');
+                if (mapElement) {
+                    map = new google.maps.Map(mapElement, mapOptions);
+
+                    var contentString = '<div style="padding: 10px;"><p style="line-height: 20px; margin: 0;"><strong>Algocak</strong></p><p style="margin: 5px 0 0 0;">123 My Street, Algocak City, CA 4567</p></div>';
+
+                    var infowindow = new google.maps.InfoWindow({
+                        content: contentString
+                    });
+
+                    marker = new google.maps.Marker({
+                        position: myLatlng,
+                        map: map,
+                        title: 'Algocak Office'
+                    });
+
+                    google.maps.event.addListener(marker, 'click', function () {
+                        infowindow.open(map, marker);
+                    });
+
+                    // Marker'a tıklanınca info window'u aç
+                    infowindow.open(map, marker);
+                }
+            }
+
+            // Eğer Google Maps yüklenemezse alternatif
+            window.addEventListener('load', function() {
+                setTimeout(function() {
+                    if (typeof google === 'undefined' || typeof google.maps === 'undefined') {
+                        console.log('Google Maps API could not be loaded. Please check your internet connection or API key.');
+                        var mapElement = document.getElementById('map-canvas');
+                        if (mapElement) {
+                            mapElement.innerHTML = '<div style="padding: 50px; text-align: center; background-color: #f5f5f5;"><p>Map could not be loaded. Please check your internet connection.</p></div>';
+                        }
+                    }
+                }, 3000);
+            });
+        </script>
+    }
+
+    <div id="switcher-options">
+        <a href="#" class="switcher-btn"><i class="fa fa-cog"></i></a>
+        <small>Switch Theme Colour</small>
+        <ul class="list-unstyled list-inline">
+            <li><a href="#" class="theme-colour default" data-name="default"></a></li>
+            <li><a href="#" class="theme-colour blue" data-name="blue"></a></li>
+            <li><a href="#" class="theme-colour violet" data-name="violet"></a></li>
+            <li><a href="#" class="theme-colour red" data-name="red"></a></li>
+            <li><a href="#" class="theme-colour orange" data-name="orange"></a></li>
+        </ul>
+    </div>
+</body>
+
+</html>

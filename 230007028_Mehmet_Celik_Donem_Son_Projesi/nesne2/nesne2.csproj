@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{EFBBDC73-2CDE-4064-B7FA-70FE466BFE29}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>nesne2</RootNamespace>
+    <AssemblyName>nesne2</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Admin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin.Designer.cs">
+      <DependentUpon>Admin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AracEkle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AracEkle.Designer.cs">
+      <DependentUpon>AracEkle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AracGuncelle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AracGuncelle.Designer.cs">
+      <DependentUpon>AracGuncelle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BakimTeknisyeni.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BakimTeknisyeni.Designer.cs">
+      <DependentUpon>BakimTeknisyeni.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Classs\Arac.cs" />
+    <Compile Include="Classs\Bagimsiz.cs" />
+    <Compile Include="Classs\Islem.cs" />
+    <Compile Include="Classs\Personel.cs" />
+    <Compile Include="GeriDonusumOperatoru.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GeriDonusumOperatoru.Designer.cs">
+      <DependentUpon>GeriDonusumOperatoru.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Giris.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Giris.Designer.cs">
+      <DependentUpon>Giris.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Muhasebe.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Muhasebe.Designer.cs">
+      <DependentUpon>Muhasebe.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PersonelEkle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PersonelEkle.Designer.cs">
+      <DependentUpon>PersonelEkle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PersonelGuncelle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PersonelGuncelle.Designer.cs">
+      <DependentUpon>PersonelGuncelle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Sofor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sofor.Designer.cs">
+      <DependentUpon>Sofor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ToplamaGorevlisi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ToplamaGorevlisi.Designer.cs">
+      <DependentUpon>ToplamaGorevlisi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VeriKordinasyon.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VeriKordinasyon.Designer.cs">
+      <DependentUpon>VeriKordinasyon.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Admin.resx">
+      <DependentUpon>Admin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AracEkle.resx">
+      <DependentUpon>AracEkle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AracGuncelle.resx">
+      <DependentUpon>AracGuncelle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BakimTeknisyeni.resx">
+      <DependentUpon>BakimTeknisyeni.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GeriDonusumOperatoru.resx">
+      <DependentUpon>GeriDonusumOperatoru.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Giris.resx">
+      <DependentUpon>Giris.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Muhasebe.resx">
+      <DependentUpon>Muhasebe.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PersonelEkle.resx">
+      <DependentUpon>PersonelEkle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PersonelGuncelle.resx">
+      <DependentUpon>PersonelGuncelle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Sofor.resx">
+      <DependentUpon>Sofor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ToplamaGorevlisi.resx">
+      <DependentUpon>ToplamaGorevlisi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VeriKordinasyon.resx">
+      <DependentUpon>VeriKordinasyon.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kapat.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\arka_plan_login.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\indir.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\clos_eye.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\open_eye.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\open_eye1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\close_eye.png" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

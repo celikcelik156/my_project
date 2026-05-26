@@ -1,0 +1,100 @@
+﻿@using System.Globalization
+@model WebProgramlamaProjesi_MehmetCelik.Models.Blog
+
+@{
+    var sonBloglar = ViewBag.SonBloglar as System.Collections.Generic.List<WebProgramlamaProjesi_MehmetCelik.Models.Blog>;
+}
+
+<div class="section-header">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <h1 class="page-header">Blog</h1>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container container-int">
+    <ol class="breadcrumb">
+        <li><a href="@Url.Action("Index", "Home")">Home</a></li>
+        <li><a href="@Url.Action("Index")">Blog</a></li>
+        @if (Model != null)
+        {
+            <li class="active">@Model.Baslik</li>
+        }
+    </ol>
+
+    <div class="row">
+        <div class="col-md-8 col-sm-8">
+            @if (Model != null)
+            {
+                <div class="post">
+                    <h1 class="post-title">@Model.Baslik</h1>
+                    <p class="post-meta">
+                        <i class="fa fa-calendar-o first"></i> @Model.OlusturmaTarihi.ToString("MMMM dd, yyyy", new CultureInfo("en-US"))
+                        <i class="fa fa-user"></i> @(string.IsNullOrEmpty(Model.Yazar) ? "Admin" : Model.Yazar)
+                        <i class="fa fa-eye"></i> @Model.GoruntulenmeSayisi views
+                    </p>
+                    @if (!string.IsNullOrEmpty(Model.ResimYolu))
+                    {
+                        <div class="img-post">
+                            <img src="@Model.ResimYolu" alt="@Model.Baslik" class="img-responsive">
+                        </div>
+                    }
+                    @if (!string.IsNullOrEmpty(Model.Icerik))
+                    {
+                        <div>
+                            @Html.Raw(Model.Icerik.Replace("\n", "<br />"))
+                        </div>
+                    }
+                    else
+                    {
+                        <p>No content available.</p>
+                    }
+                </div>
+            }
+            else
+            {
+                <div class="alert alert-danger">
+                    <h3>Blog Post Not Found</h3>
+                    <p>@(ViewBag.ErrorMessage ?? "The blog post you are looking for does not exist or is not available.")</p>
+                    <a href="@Url.Action("Index")" class="btn btn-primary">Back to Blog List</a>
+                </div>
+            }
+        </div>
+
+        <div class="col-md-4 col-sm-4 sidebar">
+            <div class="well">
+                <h4>Search</h4>
+                @using (Html.BeginForm("Index", "Blog", FormMethod.Get))
+                {
+                    <div class="input-group">
+                        <input type="text" class="form-control" name="search" id="searchInput" placeholder="Search...">
+                        <span class="input-group-btn">
+                            <button class="btn btn-primary" type="submit"><i class="fa fa-search"></i></button>
+                        </span>
+                    </div>
+                }
+            </div>
+
+
+            @if (sonBloglar != null && sonBloglar.Any())
+            {
+                <ul class="nav nav-tabs" id="widgetTab">
+                    <li class="active"><a href="#latest-news" data-toggle="tab">Recent News</a></li>
+                </ul>
+                <div class="tab-content">
+                    <div class="tab-pane fade in active list-posts" id="latest-news">
+                        <ul>
+                            @foreach (var blog in sonBloglar)
+                            {
+                                <li><a href="@Url.Action("Details", new { id = blog.Id })"><i class="fa fa-caret-right"></i> @(blog.Baslik.Length > 60 ? blog.Baslik.Substring(0, 60) + "..." : blog.Baslik)</a></li>
+                            }
+                        </ul>
+                    </div>
+                </div>
+            }
+        </div>
+    </div>
+</div>

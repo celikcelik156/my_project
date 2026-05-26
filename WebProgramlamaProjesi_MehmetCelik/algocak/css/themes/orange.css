@@ -1,0 +1,61 @@
+/* Orange Theme */
+a {
+    color: #f39c12;
+}
+
+a:hover, a:focus {
+    color: #e67e22;
+}
+
+.navbar-inverse .navbar-nav > li > a:hover, .navbar-inverse .navbar-nav > li > a:focus {
+    color: #ffffff;
+    background-color: #e67e22;
+}
+
+.navbar-inverse .navbar-nav > .active > a, .navbar-inverse .navbar-nav > .active > a:hover, .navbar-inverse .navbar-nav > .active > a:focus {
+    color: #ffffff;
+    background-color: #e67e22;
+}
+
+.navbar-inverse .navbar-nav > .open > a, .navbar-inverse .navbar-nav > .open > a:hover, .navbar-inverse .navbar-nav > .open > a:focus {
+    background-color: #e67e22;
+}
+
+.btn-primary {
+    color: #FFF;
+    background-color: #f39c12;
+    border-color: #e67e22;
+}
+
+.btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active, .open .dropdown-toggle.btn-primary {
+    background-color: #e67e22;
+}
+
+.form-control:focus {
+    border-color: #f39c12;
+}
+
+.pagination > .active > a, .pagination > .active > span, .pagination > .active > a:hover, .pagination > .active > span:hover, .pagination > .active > a:focus, .pagination > .active > span:focus {
+    background-color: #e67e22;
+}
+
+.tags a {
+    background: #f39c12;
+}
+
+.tags a:hover {
+    background: #e67e22;
+}
+
+.label-default {
+    background-color: #f39c12;
+}
+
+.block-icon {
+    background: #e67e22;
+}
+
+h3.error-404 {
+    color: #e67e22;
+}
+

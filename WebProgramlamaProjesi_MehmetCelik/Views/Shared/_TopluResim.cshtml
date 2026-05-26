@@ -1,0 +1,99 @@
+﻿@{
+    var portfoliolar = ViewBag.Portfoliolar as System.Collections.Generic.List<WebProgramlamaProjesi_MehmetCelik.Models.Portfolio>;
+}
+
+<div class="section" id="recent-projects" style="position: relative;">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <h2 class="section-title">Recent Projects</h2>
+            </div>
+
+            @if (portfoliolar != null && portfoliolar.Any())
+            {
+                foreach (var portfolio in portfoliolar)
+                {
+                    <div class="col-lg-4 col-md-4 col-sm-6">
+                        <a href="@Url.Action("Details", "Portfolio", new { id = portfolio.Id })" class="link-portfolio">
+                            <div class="overlay-portfolio">
+                                <h3>@portfolio.Baslik</h3>
+                                <small class="text-muted">
+                                    @portfolio.Aciklama
+                                </small>
+                            </div><img class="img-responsive img-home-portfolio" src="@portfolio.ResimYolu" alt="@portfolio.Baslik">
+                        </a>
+                    </div>
+                }
+            }
+            else
+            {
+                <div class="col-lg-4 col-md-4 col-sm-6">
+                    <a href="@Url.Action("Index", "Portfolio")" class="link-portfolio">
+                        <div class="overlay-portfolio">
+                            <h3>Algocak Proje 1</h3>
+                            <small class="text-muted">
+                                Modern ve şık tasarım ile web geliştirme projeleri
+                            </small>
+                        </div>
+                        <img class="img-responsive img-home-portfolio" src="/algocak/img/portfolio_1.png" alt="portfolio 1">
+                    </a>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-6">
+                    <a href="@Url.Action("Index", "Portfolio")" class="link-portfolio">
+                        <div class="overlay-portfolio">
+                            <h3>Algocak Proje 2</h3>
+                            <small class="text-muted">
+                                Responsive ve kullanıcı dostu arayüz tasarımları
+                            </small>
+                        </div>
+                        <img class="img-responsive img-home-portfolio" src="/algocak/img/portfolio_2.png" alt="portfolio 2">
+                    </a>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-6">
+                    <a href="@Url.Action("Index", "Portfolio")" class="link-portfolio">
+                        <div class="overlay-portfolio">
+                            <h3>Algocak Proje 3</h3>
+                            <small class="text-muted">
+                                İnovatif çözümler ve yaratıcı tasarım yaklaşımları
+                            </small>
+                        </div>
+                        <img class="img-responsive img-home-portfolio" src="/algocak/img/portfolio_3.png" alt="portfolio 3">
+                    </a>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-6">
+                    <a href="@Url.Action("Index", "Portfolio")" class="link-portfolio">
+                        <div class="overlay-portfolio">
+                            <h3>Algocak Proje 4</h3>
+                            <small class="text-muted">
+                                Profesyonel web uygulamaları ve mobil çözümler
+                            </small>
+                        </div>
+                        <img class="img-responsive img-home-portfolio" src="/algocak/img/portfolio_4.png" alt="portfolio 4">
+                    </a>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-6">
+                    <a href="@Url.Action("Index", "Portfolio")" class="link-portfolio">
+                        <div class="overlay-portfolio">
+                            <h3>Algocak Proje 5</h3>
+                            <small class="text-muted">
+                                E-ticaret ve kurumsal web siteleri geliştirme
+                            </small>
+                        </div>
+                        <img class="img-responsive img-home-portfolio" src="/algocak/img/portfolio_5.png" alt="portfolio 5">
+                    </a>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-6">
+                    <a href="@Url.Action("Index", "Portfolio")" class="link-portfolio">
+                        <div class="overlay-portfolio">
+                            <h3>Algocak Proje 6</h3>
+                            <small class="text-muted">
+                                SEO uyumlu ve performans odaklı web çözümleri
+                            </small>
+                        </div>
+                        <img class="img-responsive img-home-portfolio" src="/algocak/img/portfolio_6.png" alt="portfolio 6">
+                    </a>
+                </div>
+            }
+        </div>
+    </div>
+</div>```

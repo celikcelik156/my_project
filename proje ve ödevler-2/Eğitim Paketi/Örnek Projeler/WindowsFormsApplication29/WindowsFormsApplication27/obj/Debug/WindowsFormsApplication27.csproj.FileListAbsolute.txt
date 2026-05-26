@@ -1,0 +1,19 @@
+c:\users\user\documents\visual studio 2012\Projects\WindowsFormsApplication27\WindowsFormsApplication27\bin\Debug\WindowsFormsApplication27.exe.config
+c:\users\user\documents\visual studio 2012\Projects\WindowsFormsApplication27\WindowsFormsApplication27\bin\Debug\WindowsFormsApplication27.exe
+c:\users\user\documents\visual studio 2012\Projects\WindowsFormsApplication27\WindowsFormsApplication27\bin\Debug\WindowsFormsApplication27.pdb
+c:\users\user\documents\visual studio 2012\Projects\WindowsFormsApplication27\WindowsFormsApplication27\obj\Debug\WindowsFormsApplication27.Form1.resources
+c:\users\user\documents\visual studio 2012\Projects\WindowsFormsApplication27\WindowsFormsApplication27\obj\Debug\WindowsFormsApplication27.Properties.Resources.resources
+c:\users\user\documents\visual studio 2012\Projects\WindowsFormsApplication27\WindowsFormsApplication27\obj\Debug\WindowsFormsApplication27.csproj.GenerateResource.Cache
+c:\users\user\documents\visual studio 2012\Projects\WindowsFormsApplication27\WindowsFormsApplication27\obj\Debug\WindowsFormsApplication27.exe
+c:\users\user\documents\visual studio 2012\Projects\WindowsFormsApplication27\WindowsFormsApplication27\obj\Debug\WindowsFormsApplication27.pdb
+C:\Users\user\Documents\Visual Studio 2012\Projects\2023\WindowsFormsApplication29\WindowsFormsApplication27\bin\Debug\WindowsFormsApplication27.exe.config
+C:\Users\user\Documents\Visual Studio 2012\Projects\2023\WindowsFormsApplication29\WindowsFormsApplication27\obj\Debug\WindowsFormsApplication27.exe
+C:\Users\user\Documents\Visual Studio 2012\Projects\2023\WindowsFormsApplication29\WindowsFormsApplication27\obj\Debug\WindowsFormsApplication27.pdb
+C:\Users\user\Documents\Visual Studio 2012\Projects\2023\WindowsFormsApplication29\WindowsFormsApplication27\bin\Debug\WindowsFormsApplication27.exe
+C:\Users\user\Documents\Visual Studio 2012\Projects\2023\WindowsFormsApplication29\WindowsFormsApplication27\bin\Debug\WindowsFormsApplication27.pdb
+C:\Users\user\Documents\Visual Studio 2012\Projects\2023\WindowsFormsApplication29\WindowsFormsApplication27\obj\Debug\WindowsFormsApplication27.Form1.resources
+C:\Users\user\Documents\Visual Studio 2012\Projects\2023\WindowsFormsApplication29\WindowsFormsApplication27\obj\Debug\WindowsFormsApplication27.Properties.Resources.resources
+C:\Users\user\Documents\Visual Studio 2012\Projects\2023\WindowsFormsApplication29\WindowsFormsApplication27\obj\Debug\WindowsFormsApplication27.csproj.GenerateResource.Cache
+D:\Akademik\Verilen Dersler\Görsel Prog I\Projects\2023\WindowsFormsApplication29\WindowsFormsApplication27\bin\Debug\WindowsFormsApplication27.exe.config
+D:\Akademik\Verilen Dersler\Görsel Prog I\Projects\2023\WindowsFormsApplication29\WindowsFormsApplication27\obj\Debug\WindowsFormsApplication27.exe
+D:\Akademik\Verilen Dersler\Görsel Prog I\Projects\2023\WindowsFormsApplication29\WindowsFormsApplication27\obj\Debug\WindowsFormsApplication27.pdb

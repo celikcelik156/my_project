@@ -1,0 +1,25 @@
+c:\users\user\documents\visual studio 2012\Projects\WindowsFormsApplication15\WindowsFormsApplication15\bin\Debug\WindowsFormsApplication15.exe.config
+c:\users\user\documents\visual studio 2012\Projects\WindowsFormsApplication15\WindowsFormsApplication15\bin\Debug\WindowsFormsApplication15.exe
+c:\users\user\documents\visual studio 2012\Projects\WindowsFormsApplication15\WindowsFormsApplication15\bin\Debug\WindowsFormsApplication15.pdb
+c:\users\user\documents\visual studio 2012\Projects\WindowsFormsApplication15\WindowsFormsApplication15\obj\Debug\WindowsFormsApplication15.Form1.resources
+c:\users\user\documents\visual studio 2012\Projects\WindowsFormsApplication15\WindowsFormsApplication15\obj\Debug\WindowsFormsApplication15.Properties.Resources.resources
+c:\users\user\documents\visual studio 2012\Projects\WindowsFormsApplication15\WindowsFormsApplication15\obj\Debug\WindowsFormsApplication15.csproj.GenerateResource.Cache
+c:\users\user\documents\visual studio 2012\Projects\WindowsFormsApplication15\WindowsFormsApplication15\obj\Debug\WindowsFormsApplication15.exe
+c:\users\user\documents\visual studio 2012\Projects\WindowsFormsApplication15\WindowsFormsApplication15\obj\Debug\WindowsFormsApplication15.pdb
+D:\Akademik\Verilen Dersler\Görsel Prog I\Projects\WindowsFormsApplication15\WindowsFormsApplication15\bin\Debug\WindowsFormsApplication15.exe.config
+D:\Akademik\Verilen Dersler\Görsel Prog I\Projects\WindowsFormsApplication15\WindowsFormsApplication15\obj\Debug\WindowsFormsApplication15.exe
+D:\Akademik\Verilen Dersler\Görsel Prog I\Projects\WindowsFormsApplication15\WindowsFormsApplication15\obj\Debug\WindowsFormsApplication15.pdb
+D:\Akademik\Verilen Dersler\Görsel Prog I\Projects\WindowsFormsApplication15\WindowsFormsApplication15\bin\Debug\WindowsFormsApplication15.exe
+D:\Akademik\Verilen Dersler\Görsel Prog I\Projects\WindowsFormsApplication15\WindowsFormsApplication15\bin\Debug\WindowsFormsApplication15.pdb
+D:\Akademik\Verilen Dersler\Görsel Prog I\Projects\WindowsFormsApplication15\WindowsFormsApplication15\obj\Debug\WindowsFormsApplication15.Form1.resources
+D:\Akademik\Verilen Dersler\Görsel Prog I\Projects\WindowsFormsApplication15\WindowsFormsApplication15\obj\Debug\WindowsFormsApplication15.Properties.Resources.resources
+D:\Akademik\Verilen Dersler\Görsel Prog I\Projects\WindowsFormsApplication15\WindowsFormsApplication15\obj\Debug\WindowsFormsApplication15.csproj.GenerateResource.Cache
+D:\Akademik\Verilen Dersler\Görsel Prog I\Projects\WindowsFormsApplication15 timer\WindowsFormsApplication15\bin\Debug\WindowsFormsApplication15.exe.config
+D:\Akademik\Verilen Dersler\Görsel Prog I\Projects\WindowsFormsApplication15 timer\WindowsFormsApplication15\obj\Debug\WindowsFormsApplication15.exe
+D:\Akademik\Verilen Dersler\Görsel Prog I\Projects\WindowsFormsApplication15 timer\WindowsFormsApplication15\obj\Debug\WindowsFormsApplication15.pdb
+D:\Akademik\Verilen Dersler\Görsel Prog I\Projects\WindowsFormsApplication15 timer\WindowsFormsApplication15\bin\Debug\WindowsFormsApplication15.exe
+D:\Akademik\Verilen Dersler\Görsel Prog I\Projects\WindowsFormsApplication15 timer\WindowsFormsApplication15\bin\Debug\WindowsFormsApplication15.pdb
+D:\Akademik\Verilen Dersler\Görsel Prog I\Projects\WindowsFormsApplication15 timer\WindowsFormsApplication15\obj\Debug\WindowsFormsApplication15.csprojResolveAssemblyReference.cache
+D:\Akademik\Verilen Dersler\Görsel Prog I\Projects\WindowsFormsApplication15 timer\WindowsFormsApplication15\obj\Debug\WindowsFormsApplication15.Form1.resources
+D:\Akademik\Verilen Dersler\Görsel Prog I\Projects\WindowsFormsApplication15 timer\WindowsFormsApplication15\obj\Debug\WindowsFormsApplication15.Properties.Resources.resources
+D:\Akademik\Verilen Dersler\Görsel Prog I\Projects\WindowsFormsApplication15 timer\WindowsFormsApplication15\obj\Debug\WindowsFormsApplication15.csproj.GenerateResource.Cache

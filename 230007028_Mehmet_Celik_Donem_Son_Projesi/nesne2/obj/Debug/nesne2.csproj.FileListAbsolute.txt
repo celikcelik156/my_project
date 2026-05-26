@@ -1,0 +1,42 @@
+C:\Users\semsi\OneDrive\Belgeler\nesne2\bin\Debug\nesne2.exe.config
+C:\Users\semsi\OneDrive\Belgeler\nesne2\bin\Debug\nesne2.exe
+C:\Users\semsi\OneDrive\Belgeler\nesne2\bin\Debug\nesne2.pdb
+C:\Users\semsi\OneDrive\Belgeler\nesne2\obj\Debug\nesne2.csproj.AssemblyReference.cache
+C:\Users\semsi\OneDrive\Belgeler\nesne2\obj\Debug\nesne2.Properties.Resources.resources
+C:\Users\semsi\OneDrive\Belgeler\nesne2\obj\Debug\nesne2.csproj.GenerateResource.cache
+C:\Users\semsi\OneDrive\Belgeler\nesne2\obj\Debug\nesne2.csproj.CoreCompileInputs.cache
+C:\Users\semsi\OneDrive\Belgeler\nesne2\obj\Debug\nesne2.exe
+C:\Users\semsi\OneDrive\Belgeler\nesne2\obj\Debug\nesne2.pdb
+C:\Users\semsi\OneDrive\Belgeler\nesne2\obj\Debug\nesne2.Giris.resources
+C:\Users\semsi\OneDrive\Belgeler\nesne2\obj\Debug\nesne2.Sofor.resources
+C:\Users\semsi\OneDrive\Belgeler\nesne2\obj\Debug\nesne2.ToplamaGorevlisi.resources
+C:\Users\semsi\OneDrive\Belgeler\nesne2\obj\Debug\nesne2.GeriDonusumOperatoru.resources
+C:\Users\semsi\OneDrive\Belgeler\nesne2\obj\Debug\nesne2.BakimTeknisyeni.resources
+C:\Users\semsi\OneDrive\Belgeler\nesne2\obj\Debug\nesne2.Muhasebe.resources
+C:\Users\semsi\OneDrive\Belgeler\nesne2\obj\Debug\nesne2.Admin.resources
+C:\Users\semsi\OneDrive\Belgeler\nesne2\obj\Debug\nesne2.AracEkle.resources
+C:\Users\semsi\OneDrive\Belgeler\nesne2\obj\Debug\nesne2.VeriKordinasyon.resources
+C:\Users\semsi\OneDrive\Belgeler\nesne2\obj\Debug\nesne2.AracGuncelle.resources
+C:\Users\semsi\OneDrive\Belgeler\nesne2\obj\Debug\nesne2.PersonelEkle.resources
+C:\Users\semsi\OneDrive\Belgeler\nesne2\obj\Debug\nesne2.PersonelGüncelle.resources
+C:\Users\semsi\OneDrive\Masaüstü\müh. dersleri\230007028_Mehmet_Celik_Donem_Son_Projesi\nesne2\bin\Debug\nesne2.exe.config
+C:\Users\semsi\OneDrive\Masaüstü\müh. dersleri\230007028_Mehmet_Celik_Donem_Son_Projesi\nesne2\bin\Debug\nesne2.exe
+C:\Users\semsi\OneDrive\Masaüstü\müh. dersleri\230007028_Mehmet_Celik_Donem_Son_Projesi\nesne2\bin\Debug\nesne2.pdb
+C:\Users\semsi\OneDrive\Masaüstü\müh. dersleri\230007028_Mehmet_Celik_Donem_Son_Projesi\nesne2\obj\Debug\nesne2.csproj.AssemblyReference.cache
+C:\Users\semsi\OneDrive\Masaüstü\müh. dersleri\230007028_Mehmet_Celik_Donem_Son_Projesi\nesne2\obj\Debug\nesne2.Admin.resources
+C:\Users\semsi\OneDrive\Masaüstü\müh. dersleri\230007028_Mehmet_Celik_Donem_Son_Projesi\nesne2\obj\Debug\nesne2.AracEkle.resources
+C:\Users\semsi\OneDrive\Masaüstü\müh. dersleri\230007028_Mehmet_Celik_Donem_Son_Projesi\nesne2\obj\Debug\nesne2.AracGuncelle.resources
+C:\Users\semsi\OneDrive\Masaüstü\müh. dersleri\230007028_Mehmet_Celik_Donem_Son_Projesi\nesne2\obj\Debug\nesne2.BakimTeknisyeni.resources
+C:\Users\semsi\OneDrive\Masaüstü\müh. dersleri\230007028_Mehmet_Celik_Donem_Son_Projesi\nesne2\obj\Debug\nesne2.GeriDonusumOperatoru.resources
+C:\Users\semsi\OneDrive\Masaüstü\müh. dersleri\230007028_Mehmet_Celik_Donem_Son_Projesi\nesne2\obj\Debug\nesne2.Giris.resources
+C:\Users\semsi\OneDrive\Masaüstü\müh. dersleri\230007028_Mehmet_Celik_Donem_Son_Projesi\nesne2\obj\Debug\nesne2.Muhasebe.resources
+C:\Users\semsi\OneDrive\Masaüstü\müh. dersleri\230007028_Mehmet_Celik_Donem_Son_Projesi\nesne2\obj\Debug\nesne2.PersonelEkle.resources
+C:\Users\semsi\OneDrive\Masaüstü\müh. dersleri\230007028_Mehmet_Celik_Donem_Son_Projesi\nesne2\obj\Debug\nesne2.PersonelGüncelle.resources
+C:\Users\semsi\OneDrive\Masaüstü\müh. dersleri\230007028_Mehmet_Celik_Donem_Son_Projesi\nesne2\obj\Debug\nesne2.Properties.Resources.resources
+C:\Users\semsi\OneDrive\Masaüstü\müh. dersleri\230007028_Mehmet_Celik_Donem_Son_Projesi\nesne2\obj\Debug\nesne2.Sofor.resources
+C:\Users\semsi\OneDrive\Masaüstü\müh. dersleri\230007028_Mehmet_Celik_Donem_Son_Projesi\nesne2\obj\Debug\nesne2.ToplamaGorevlisi.resources
+C:\Users\semsi\OneDrive\Masaüstü\müh. dersleri\230007028_Mehmet_Celik_Donem_Son_Projesi\nesne2\obj\Debug\nesne2.VeriKordinasyon.resources
+C:\Users\semsi\OneDrive\Masaüstü\müh. dersleri\230007028_Mehmet_Celik_Donem_Son_Projesi\nesne2\obj\Debug\nesne2.csproj.GenerateResource.cache
+C:\Users\semsi\OneDrive\Masaüstü\müh. dersleri\230007028_Mehmet_Celik_Donem_Son_Projesi\nesne2\obj\Debug\nesne2.csproj.CoreCompileInputs.cache
+C:\Users\semsi\OneDrive\Masaüstü\müh. dersleri\230007028_Mehmet_Celik_Donem_Son_Projesi\nesne2\obj\Debug\nesne2.exe
+C:\Users\semsi\OneDrive\Masaüstü\müh. dersleri\230007028_Mehmet_Celik_Donem_Son_Projesi\nesne2\obj\Debug\nesne2.pdb

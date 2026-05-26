@@ -1,0 +1,184 @@
+﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+using System.Data.SqlClient;
+
+namespace nesne2
+{
+    public partial class Form1 : Form
+    {
+
+        SqlConnection connection = new SqlConnection("Data Source=--MEHMETCELIK--;Initial Catalog=AtikToplama;Integrated Security=True");
+n        // Panelleri saklamak için alanlar
+        private Panel panelTextBox1;
+        private Panel panelTextBox2;
+        private readonly Color textboxBorderDefault = SystemColors.ControlDark;
+n        public Form1()
+        {
+            InitializeComponent();
+n            textBox2.UseSystemPasswordChar = true;
+n            // TextBox'ları panel ile sararak odaklandığında mavi çerçeve göster
+            panelTextBox1 = WrapTextBoxWithPanel(textBox1);
+            panelTextBox2 = WrapTextBoxWithPanel(textBox2);
+        }
+
+        private Panel WrapTextBoxWithPanel(TextBox tb)
+        {
+            if (tb == null || tb.Parent == null)
+                return null;
+n            var parent = tb.Parent;
+            int index = parent.Controls.GetChildIndex(tb);
+            var location = tb.Location;
+            var size = tb.Size;
+            var anchor = tb.Anchor;
+            var tabIndex = tb.TabIndex;
+n            // Remove textbox from current parent
+            parent.Controls.Remove(tb);
+n            // Create panel to act as colored border
+            var panel = new Panel
+            {
+                Location = location,
+                Size = size,
+                Anchor = anchor,
+                Padding = new Padding(1),
+                BackColor = textboxBorderDefault,
+                TabIndex = tabIndex,
+                Name = tb.Name + "_panel"
+            };
+n            // Configure textbox to fill panel
+            tb.BorderStyle = BorderStyle.None;
+            tb.Margin = new Padding(0);
+            tb.Dock = DockStyle.Fill;
+n            panel.Controls.Add(tb);
+n            // Insert panel into original parent at same index
+            parent.Controls.Add(panel);
+            parent.Controls.SetChildIndex(panel, index);
+n            // Odağı takip et
+            tb.GotFocus += (s, e) => panel.BackColor = Color.DodgerBlue;
+            tb.LostFocus += (s, e) => panel.BackColor = textboxBorderDefault;
+n            return panel;
+        }
+n        private void button1_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+n        bool move;
+        int mouse_x;
+        int mouse_y;
+n        private void Form1_MouseDown(object sender, MouseEventArgs e)
+        {
+            move = true;
+            mouse_x = e.X;
+            mouse_y = e.Y;
+        }
+
+        private void Form1_MouseMove(object sender, MouseEventArgs e)
+        {
+            if (move)
+            {
+                this.SetDesktopLocation(MousePosition.X - mouse_x, MousePosition.Y - mouse_y);
+            }
+        }
+n        private void Form1_MouseUp(object sender, MouseEventArgs e)
+        {
+            move = false;
+        }
+n        private void button2_Click(object sender, EventArgs e)
+        {
+            string kullanici_adi = textBox1.Text;
+            string sifre = textBox2.Text;
+            bool isAdmin = true;
+            bool isThere = false;
+            bool isThereAdmin = false;
+n            connection.Open();
+n            SqlCommand command = new SqlCommand("SELECT * FROM Personel", connection);
+            SqlDataReader reader = command.ExecuteReader();
+n            while (reader.Read())
+            {
+                if (kullanici_adi == reader["Eposta"].ToString().TrimEnd() && sifre == reader["sifre"].ToString().TrimEnd())
+                {
+                    isThere = true;
+n                    if (isAdmin.ToString() == reader["isAdmin"].ToString().TrimEnd())
+                    {
+                        isThereAdmin = true;
+                    }
+                }
+            }
+n            if (isThere == true)
+            {
+                if (isThereAdmin == true)
+                {
+                    MessageBox.Show("Giriş Başarılı! Admin sayfasına gidiyorsun!!!", "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    connection.Close();
+                    this.Hide();
+                    return;
+                }
+                else
+                {
+                    MessageBox.Show("Giriş Başarılı!", "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    connection.Close();
+                    this.Hide();
+                    return;
+                }
+            }
+            else
+            {
+                MessageBox.Show("Kullanıcı adı veya şifre yanlış!", "Hata", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                connection.Close();
+                return;
+            }
+n        }
+n        int goster_say = 0;
+        private void button3_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                string path;
+                if (goster_say % 2 == 0)
+                {
+                    path = @"C:\Users\semsi\OneDrive\Belgeler\nesne2\Resources\close_eye.png";
+                    textBox2.UseSystemPasswordChar = false;
+                }
+                else
+                {
+                    path = @"C:\Users\semsi\OneDrive\Belgeler\nesne2\Resources\open_eye.png";
+                    textBox2.UseSystemPasswordChar = true;
+                }
+n                var newImg = Image.FromFile(path);
+                button3.BackgroundImage = newImg;
+n                goster_say++;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Resim yüklenemedi: " + ex.Message, "Hata", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+n        private void textBox1_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                e.SuppressKeyPress = true; // sistem "ding" sesini engeller
+                textBox2.Focus();
+            }
+        }
+n        private void textBox2_KeyDown(object sender, KeyEventArgs e)
+        {
+n            if (e.KeyCode == Keys.Enter)
+            {
+                e.SuppressKeyPress = true; // sistem "ding" sesini engeller
+                button2_Click(sender, e);
+            }
+        }
+n        private void Form1_Load(object sender, EventArgs e)
+        {
+n            textBox1.Select();
+        }
+    }
+}
+

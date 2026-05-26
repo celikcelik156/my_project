@@ -1,0 +1,24 @@
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="section-colored">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-2 col-sm-3">
+                <img src="~/algocak/img/monster.png" alt="monster" class="img-responsive center-block monster">
+            </div>
+            <div class="col-md-10 col-sm-9">
+                <h1>ooops...</h1>
+                <h2>It seems the page you were looking for doesn't exist</h2>
+                <h3 class="error-404 text-center">404</h3>
+                <div style="margin-top: 30px;">
+                    <a href="@Url.Action("Index", "Home")" class="btn btn-primary btn-lg">
+                        <i class="fa fa-home"></i> Go Back to Home
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+

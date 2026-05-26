@@ -1,0 +1,16 @@
+c:\users\user\documents\visual studio 2012\Projects\WindowsFormsApplication9\WindowsFormsApplication9\bin\Debug\WindowsFormsApplication9.exe.config
+c:\users\user\documents\visual studio 2012\Projects\WindowsFormsApplication9\WindowsFormsApplication9\bin\Debug\WindowsFormsApplication9.exe
+c:\users\user\documents\visual studio 2012\Projects\WindowsFormsApplication9\WindowsFormsApplication9\bin\Debug\WindowsFormsApplication9.pdb
+c:\users\user\documents\visual studio 2012\Projects\WindowsFormsApplication9\WindowsFormsApplication9\obj\Debug\WindowsFormsApplication9.csprojResolveAssemblyReference.cache
+c:\users\user\documents\visual studio 2012\Projects\WindowsFormsApplication9\WindowsFormsApplication9\obj\Debug\WindowsFormsApplication9.Form1.resources
+c:\users\user\documents\visual studio 2012\Projects\WindowsFormsApplication9\WindowsFormsApplication9\obj\Debug\WindowsFormsApplication9.Properties.Resources.resources
+c:\users\user\documents\visual studio 2012\Projects\WindowsFormsApplication9\WindowsFormsApplication9\obj\Debug\WindowsFormsApplication9.csproj.GenerateResource.Cache
+c:\users\user\documents\visual studio 2012\Projects\WindowsFormsApplication9\WindowsFormsApplication9\obj\Debug\WindowsFormsApplication9.exe
+c:\users\user\documents\visual studio 2012\Projects\WindowsFormsApplication9\WindowsFormsApplication9\obj\Debug\WindowsFormsApplication9.pdb
+c:\users\user\documents\visual studio 2012\Projects\WindowsFormsApplication9\WindowsFormsApplication9\obj\Debug\WindowsFormsApplication9.Form2.resources
+D:\Akademik\Verilen Dersler\Görsel Prog I\Projects\WindowsFormsApplication9\WindowsFormsApplication9\bin\Debug\WindowsFormsApplication9.exe.config
+D:\Akademik\Verilen Dersler\Görsel Prog I\Projects\WindowsFormsApplication9\WindowsFormsApplication9\obj\Debug\WindowsFormsApplication9.exe
+D:\Akademik\Verilen Dersler\Görsel Prog I\Projects\WindowsFormsApplication9\WindowsFormsApplication9\obj\Debug\WindowsFormsApplication9.pdb
+D:\Akademik\Verilen Dersler\Görsel Prog I\Projects\WindowsFormsApplication9 check ve radio2\WindowsFormsApplication9\bin\Debug\WindowsFormsApplication9.exe.config
+D:\Akademik\Verilen Dersler\Görsel Prog I\Projects\WindowsFormsApplication9 check ve radio2\WindowsFormsApplication9\obj\Debug\WindowsFormsApplication9.exe
+D:\Akademik\Verilen Dersler\Görsel Prog I\Projects\WindowsFormsApplication9 check ve radio2\WindowsFormsApplication9\obj\Debug\WindowsFormsApplication9.pdb
