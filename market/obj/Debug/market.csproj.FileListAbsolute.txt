@@ -1,0 +1,9 @@
+C:\Users\mehme\OneDrive\Desktop\market\bin\Debug\market.exe.config
+C:\Users\mehme\OneDrive\Desktop\market\bin\Debug\market.exe
+C:\Users\mehme\OneDrive\Desktop\market\bin\Debug\market.pdb
+C:\Users\mehme\OneDrive\Desktop\market\obj\Debug\market.csproj.AssemblyReference.cache
+C:\Users\mehme\OneDrive\Desktop\market\obj\Debug\market.Properties.Resources.resources
+C:\Users\mehme\OneDrive\Desktop\market\obj\Debug\market.csproj.GenerateResource.cache
+C:\Users\mehme\OneDrive\Desktop\market\obj\Debug\market.csproj.CoreCompileInputs.cache
+C:\Users\mehme\OneDrive\Desktop\market\obj\Debug\market.exe
+C:\Users\mehme\OneDrive\Desktop\market\obj\Debug\market.pdb
