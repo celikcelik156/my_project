@@ -1,7 +1,7 @@
 import sys
 import os
 
-PROJE_DIR = r"c:\Users\mehme\OneDrive\Desktop\yapay zekaya giriş dönem sonu projesi"
+PROJE_DIR = os.path.dirname(os.path.abspath(__file__))
 sys.path.insert(0, os.path.join(PROJE_DIR, "src"))
 
 from veri_olustur import uret_veri

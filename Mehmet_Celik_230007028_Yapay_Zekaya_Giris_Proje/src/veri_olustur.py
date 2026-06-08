@@ -111,8 +111,10 @@ def uret_veri(n=1000):
     return df
 
 if __name__ == "__main__":
+    import os
     df = uret_veri(1200)
-    cikis = r"c:\Users\mehme\OneDrive\Desktop\yapay zekaya giriş dönem sonu projesi\data\emlak_veri.csv"
+    PROJE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+    cikis = os.path.join(PROJE_DIR, "data", "emlak_veri.csv")
     df.to_csv(cikis, index=False, encoding="utf-8-sig")
     print(f"✅ {len(df)} satır veri oluşturuldu!")
     print(f"📊 Sütunlar: {list(df.columns)}")

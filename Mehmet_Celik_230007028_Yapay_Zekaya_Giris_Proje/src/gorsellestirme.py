@@ -10,7 +10,8 @@ import os
 plt.rcParams["font.family"] = "DejaVu Sans"
 plt.rcParams["figure.dpi"] = 120
 RENK_PALETI = ["#6366f1", "#8b5cf6", "#06b6d4", "#10b981", "#f59e0b", "#ef4444"]
-GRAFIK_DIR = r"c:\Users\mehme\OneDrive\Desktop\yapay zekaya giriş dönem sonu projesi\grafikler"
+PROJE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+GRAFIK_DIR = os.path.join(PROJE_DIR, "grafikler")
 
 def grafik_kaydet(fig, isim):
     os.makedirs(GRAFIK_DIR, exist_ok=True)

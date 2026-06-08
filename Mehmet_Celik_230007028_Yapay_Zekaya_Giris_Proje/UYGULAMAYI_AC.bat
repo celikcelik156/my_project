@@ -9,7 +9,7 @@ echo    Ogrenci: Mehmet Celik
 echo  ============================================
 echo.
 
-cd /d "c:\Users\mehme\OneDrive\Desktop\yapay zekaya giriş dönem sonu projesi"
+cd /d "%~dp0"
 
 echo  [1/2] Modeller kontrol ediliyor...
 if not exist "data\modeller.pkl" (

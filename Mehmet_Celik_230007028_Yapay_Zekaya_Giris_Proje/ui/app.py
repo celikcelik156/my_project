@@ -18,7 +18,7 @@ st.set_page_config(
     initial_sidebar_state="expanded"
 )
 
-PROJE_DIR = r"c:\Users\mehme\OneDrive\Desktop\yapay zekaya giriş dönem sonu projesi"
+PROJE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 sys.path.insert(0, os.path.join(PROJE_DIR, "src"))
 MODEL_DOSYASI = os.path.join(PROJE_DIR, "data", "modeller.pkl")
 VERI_DOSYASI = os.path.join(PROJE_DIR, "data", "emlak_veri.csv")
