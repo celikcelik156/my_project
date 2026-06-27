@@ -5,7 +5,7 @@ from sklearn.model_selection import train_test_split
 
 def veri_yukle(dosya_yolu):
     df = pd.read_csv(dosya_yolu, encoding="utf-8-sig")
-    print(f"✅ Veri yüklendi: {df.shape[0]} satır, {df.shape[1]} sütun")
+    print(f"Veri yüklendi: {df.shape[0]} satır, {df.shape[1]} sütun")
     return df
 
 def eksik_veri_analiz(df):
